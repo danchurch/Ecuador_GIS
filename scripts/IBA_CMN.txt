@@ -1,0 +1,138 @@
+## let's see if we can get (1) area of IBAs, collectively and individually,
+
+## 2) total area of concessions and individual areas
+
+## 3) area of IBAs affected, total and individually
+
+## modules ...
+
+import pandas
+
+## open the concessions:
+with open('CMN_added_geom.csv', 'r') as f:
+    CMN = pandas.read_csv(f)
+
+## open the IBAs:
+with open('IBA_added_geom.csv', 'r') as f:
+    IBA = pandas.read_csv(f)
+
+## open the difference csv:
+with open('IBA_CMN_diff_added_geom.csv', 'r') as f:
+    diff = pandas.read_csv(f)
+
+## check to see if the ids match. 
+
+## maybe use the IBA fin code?
+len(IBA['FinCode'].unique())
+
+len(diff['FinCode'].unique())
+
+len(IBA['FinCode'])
+len(diff['FinCode'])
+
+## are they in the same order?
+
+IBA['FinCode'].head(5)
+diff['FinCode'].head(5)
+
+## yeah, but missing one polygon in the diff file
+
+## test which rows of our IBA dataframe 
+inconcession = [ x in list(diff.FinCode) for x in list(IBA.FinCode) ]
+
+## only row 79, FinCode EC084 is not in our diff file
+
+## we can exclude the funky polygon for a moment. 
+IBAinCo = IBA[inconcession]
+## this is a subset of just IBAs (rows) are affected. 
+
+## what columns do we need? 
+
+list(IBAinCo)
+
+## important columns:
+## area, FinCode. This is the area if the IBA
+IBAinCo = IBAinCo[['FinCode','area']].reset_index(drop=True)
+
+## now add the area that is not part of a concession. This is the area of
+## the diff polygons
+
+## sort both by FinCo:
+#diff_sorted = diff.sort_values('FinCode').reset_index(drop=True)
+## don't need 
+
+## difference file and new IBA object line up?
+diff['FinCode'].tail(10)
+IBAinCo['FinCode'].tail(10)
+## yup
+
+## looks good
+
+## add columns:
+IBAinCo['diffCode'] = diff.FinCode 
+IBAinCo['diff_area'] = diff.area
+
+## sort by FinCode, renumber:
+IBAinCo = IBAinCo.sort_values('FinCode').reset_index(drop=True)
+
+
+## check
+IBAinCo.head(10)
+IBAinCo.tail(10)
+
+## now create a new column showing percent of IBA occupied 
+## by inter_area:
+
+IBAinCo['percent_affected'] = (1-IBAinCo['diff_area']/IBAinCo['area'])
+
+#IBAinCo['percent_affected'] = round(IBAinCo['percent_affected'],2)
+
+## total area of IBAs:
+sum(IBAinCo['area']) ## 100071895261.10329 m 
+
+## total area unaffected:
+sum(IBAinCo['diff_area']) ## 90143311047.416229 m 
+sum(IBAinCo['diff_area'])/10000 ## 9,014,331 ha
+
+## does this generally match up with an intersect polygon?
+100071895261.10329 - 90143311047.416229 ## = 9928584213.687057
+
+with open('IBM_CMN_inter.csv', 'r') as f:
+    inter = pandas.read_csv(f)
+
+sum(inter['area']) ## 10421531309.382637
+sum(inter['area'])/10000 ## 1042153 ha, ~1 million ha of prime bird habitat. is this right?
+
+(10421531309.382637 - 9928584213.687057)/10421531309.382637 ## .047
+## so we get a 4.7% area difference depending on method. Something to think about. 
+
+## How do we know which is more accurate? The intersection is 
+## a more parsimonious answer, go with it:
+
+sum(inter['area'])/sum(IBA['area']) ## 0.10298821921612115 
+## so ~10% of IBAs are affected. 
+
+## IBAs with greater than 50% loss
+IBAinCo[IBAinCo['percent_affected'] > 0.5].shape
+
+IBAinCo.shape
+
+IBAinCo['area_concession'] = IBAinCo['area'] - IBAinCo['diff_area'] 
+
+IBAinCo.rename(columns = {'diff_area':'area_unaffected'}, inplace = True)
+
+##  get rid of extra column export:
+
+IBA_concessions = IBAinCo[['FinCode','area','area_unaffected','area_concession','percent_affected']]
+
+## convert to ha
+
+IBA_concessions.iloc[:,1:4] = IBA_concessions.iloc[:,1:4]/10000
+
+IBAinCo.tail(2)
+IBA_concessions.tail(2)
+
+## write out:
+IBA_concessions.to_csv('IBA_concessions.csv')
+
+
