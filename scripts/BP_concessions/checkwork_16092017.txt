@@ -1,0 +1,118 @@
+from qgis.analysis import *
+
+## load concessions. These were obtained from the
+## ecuadorian govt, in the form a CD. They have not
+## yet been released on the Arcom website as shapefiles,
+## though they are available for viewing. 
+
+Concessions_aug2017 = QgsVectorLayer("/home/daniel/Documents/\
+losced/GIS/concesiones/concessions_07_08_2017/CMN_07_08_2017/\
+CMN_07_08_2017_WGS84.shp","Concessions_aug2017", "ogr")
+
+QgsMapLayerRegistry.instance().addMapLayer(Concessions_aug2017)
+
+## load bosque protectores. 
+## These are from http://sni.gob.ec/coberturas
+## which queries a map server of the minesterio del ambiente
+## with the following:
+##http://mapainteractivo.ambiente.gob.ec/geoserver/geosuia/
+##   ows?service=WFS&version=1.0.0&request=GetFeature&typeName=geosuia:
+##   car_bosques_protectores&outputFormat=SHAPE-ZIP
+
+## where necessary, all layers were reprojected to UTM 27S, with a CRS of 
+## WGS, datum 84
+
+
+BPs = QgsVectorLayer("/home/daniel/Documents/losced/GIS/BP_and_parks/sni_cobertura_2015/\
+car_bosques_protectores.shp", "Bosque_Protectores", "ogr")
+
+QgsMapLayerRegistry.instance().addMapLayer(BPs)
+
+## check units etc
+Concessions_aug2017.crs().ellipsoidAcronym()
+Concessions_aug2017.crs().projectionAcronym()
+Concessions_aug2017.crs().mapUnits()
+
+BPs.crs().ellipsoidAcronym()
+BPs.crs().projectionAcronym()
+BPs.crs().mapUnits()
+## both of these layers are in WGS 84 / UTM 17S, units = m
+
+## what are the area of both of these polygon layers?
+
+####### Bosque protector areas: #########
+
+## so can we loop this?
+bp_pols = BPs.getFeatures()
+BPareas = [ i.geometry().area() for i in bp_pols ]
+
+allBParea = sum(BPareas)
+## 2422879.23771814676 m^2
+
+## convert to ha
+allBParea / 10000
+## 2,422,879 ha
+
+############### Concessions area total ##########
+
+conc_pols = Concessions_aug2017.getFeatures()
+conc_areas = [ i.geometry().area() for i in conc_pols ]
+
+allConcArea = sum(conc_areas)
+## 36936684997.08659 m^2, or 
+
+allConcArea / 10000
+##3693668.4997086595 ha
+
+## do we need to incorporate more crs info, use 
+## the QgsDistanceArea class? If there is a lot of 
+## discrepancy, look into this. 
+
+############## overlap of Concessions and Bosque protectores ######
+
+conc_pols = Concessions_aug2017.getFeatures()
+
+overlayAnalyzer.intersection(BPs, Concessions_aug2017,\
+    "/home/daniel/Documents/losced/GIS/scripts/BP_concessions/BP_Conc_intersect.shp")
+
+## creates intersection as a new layer. Check it:
+
+BP_Conc_intersect = QgsVectorLayer("/home/daniel/Documents\
+/losced/GIS/scripts/BP_concessions/BP_Conc_intersect.shp",\
+"BP_Conc_intersect", "ogr")
+
+QgsMapLayerRegistry.instance().addMapLayer(BP_Conc_intersect)
+
+BP_Conc_intersect.crs().ellipsoidAcronym()
+BP_Conc_intersect.crs().projectionAcronym()
+BP_Conc_intersect.crs().mapUnits()
+
+## looks good. Area of this intersection?
+
+BP_Conc_intersect_pols = BP_Conc_intersect.getFeatures()
+BP_Conc_intersect_areas = [ i.geometry().area() for i in BP_Conc_intersect_pols ]
+
+inter_area = sum(BP_Conc_intersect_areas)
+## = 7355978680.6346445, or in ha:
+
+inter_area / 10000
+## = 735,597 
+
+## what percent of the BP area is this?
+
+inter_area / allBParea 
+## = 0.3036048419632528
+## this is what Mireya said. 
+
+
+## let's add provinces
+
+provincias = QgsVectorLayer("/home/daniel/Documents/losced/GIS/provincias/provincias.shp",\
+    "provincias", "ogr")
+
+
+QgsMapLayerRegistry.instance().addMapLayer(provincias)
+
+## do some rearranging, export
+############# 
+
