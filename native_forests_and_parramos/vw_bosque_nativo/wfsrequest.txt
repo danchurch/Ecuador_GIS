@@ -1,0 +1,1 @@
+http://geoportal.agricultura.gob.ec:80/cobertura_tierra/E100k/wms?service=WFS&version=1.0.0&request=GetFeature&typeName=vw_bosque_nativo&outputFormat=SHAPE-ZIP
