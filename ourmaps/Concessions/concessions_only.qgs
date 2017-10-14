@@ -145,7 +145,14 @@
           <customproperties/>
         </ComposerItem>
       </ComposerMap>
-      <customproperties/>
+      <customproperties>
+        <property key="svgCropMarginBottom" value="0"/>
+        <property key="svgCropMarginLeft" value="0"/>
+        <property key="svgCropMarginRight" value="0"/>
+        <property key="svgCropMarginTop" value="0"/>
+        <property key="svgCropToContents" value="false"/>
+        <property key="svgGroupLayers" value="false"/>
+      </customproperties>
     </Composition>
   </Composer>
   <projectlayers>
@@ -1351,6 +1358,9 @@ def my_form_open(dialog, layer, feature):
       <ProjectCRSID type="int">3452</ProjectCRSID>
       <ProjectionsEnabled type="int">1</ProjectionsEnabled>
     </SpatialRefSys>
+    <PAL>
+      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
+    </PAL>
     <Paths>
       <Absolute type="bool">false</Absolute>
     </Paths>
