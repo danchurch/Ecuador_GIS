@@ -3,15 +3,24 @@
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
-  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+  <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="CMN_07_08_2017_WGS8420171018214952510" source="/home/daniel/Documents/losced/GIS/concesiones/concessions_07_08_2017/CMN_07_08_2017/CMN_07_08_2017_WGS84.shp" name="Concession">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Conc_in_AF_remnants20171020002856685" source="/home/daniel/Documents/losced/GIS/ourmaps/CloudForests/Conc_in_AF_remnants.shp" name="Conc_in_AF_remnants">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Checked" id="eco_zones_UTM20171018220234434" source="/home/daniel/Documents/losced/GIS/ecological_zones/eco_zones_UTM.shp" name="eco_zones_UTM">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="CMN_07_08_2017_WGS8420171018214952510" source="/home/daniel/Documents/losced/GIS/concesiones/concessions_07_08_2017/CMN_07_08_2017/CMN_07_08_2017_WGS84.shp" name="Concession">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Ecuador_outline20171019001116199" source="/home/daniel/Documents/losced/GIS/limites_administrativas/Ecuador_outline.shp" name="Ecuador_outline">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Andean_forest_remnant20171019231925653" source="/home/daniel/Documents/losced/GIS/native_forests_and_parramos/Andean_forest_remnant/Andean_forest_remnant.shp" name="Andean_forest_remnant">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="AndeanForestMerged20171019224850574" source="/home/daniel/Documents/losced/GIS/ecological_zones/AndeanForestMerged.shp" name="AndeanForestMerged">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="vw_bosque_nativo20171019230530217" source="/home/daniel/Documents/losced/GIS/native_forests_and_parramos/vw_bosque_nativo/vw_bosque_nativo.shp" name="vw_bosque_nativo">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="nxprovincias20171020003557417" source="/home/daniel/Documents/losced/GIS/limites_administrativas/nxprovincias.shp" name="nxprovincias">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -19,10 +28,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>502903.63927569182123989</xmin>
-      <ymin>9428700.63532880507409573</ymin>
-      <xmax>934089.21989121369551867</xmax>
-      <ymax>10150307.88621717877686024</ymax>
+      <xmin>599935.77471079432871193</xmin>
+      <ymin>9444029.82044766657054424</ymin>
+      <xmax>1027446.3554850866785273</xmax>
+      <ymax>10164533.11547408811748028</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -40,91 +49,150 @@
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019004444229"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Overlay20171019012922287"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019004254658"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019003917199"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171019011301869"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019002746617"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019003251949"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Ecuador_outline20171019001116199"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019004339312"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Dissolved20171019004922935"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019003252133"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Dissolved20171019002516565"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ecological_zones_copy20171018215446901"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019003917231"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019002643172"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019004444205"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Dissolved20171019000938920"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019004129928"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019004023507"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="ecological_zones_copy20171018215043967"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ecological_zones20171018215013635"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="nxprovincias20171019000735509"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019002911426"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019002746646"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="eco_zones_UTM20171018220007462"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019003252104"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019005420713"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019005217064"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Dissolved20171019002400039"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019005145445"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019005145480"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019004339282"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="eco_zones_UTM_copy20171018235121882"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019005420686"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019004254686"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019002821424"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019004203837"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019002821392"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019005217087"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019003547556"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019003251923"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="CMN_07_08_2017_WGS8420171018214952510"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="eco_zones_UTM_copy20171018234813172"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="eco_zones_UTM20171018220234434"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Dissolved20171019004854033"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171019011927775"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019002911454"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171019010713642"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019002643128"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171019000206532"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019004129904"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019004203865"/>
       <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Overlay20171019000440835"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171019010151631"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019004023481"/>
-      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="ecological_zones_copy20171018215333493"/>
       <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="eco_zones_UTM_copy20171019002025662"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019222921828"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019223056764"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019004129904"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ecological_zones20171020003227723"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="AndeanForest20171019220910078"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="nxprovincias20171019000735509"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171019011927775"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171020002751058"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019224039245"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019223849221"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019222223455"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Dissolved20171019002400039"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="eco_zones_UTM_copy20171018234813172"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171019225501588"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="ecological_zones_copy20171018215043967"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019005420686"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019004023481"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019223506799"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019003251949"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171019224655460"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Dissolved20171019000938920"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019005217087"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019002911426"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019004254658"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Dissolved20171019002516565"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019223506762"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019224039215"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019224114216"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Andean_forest_remnant20171019231654248"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019004129928"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Dissolved20171019004854033"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Overlay20171019231219737"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019003252133"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019002643128"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019004444229"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="AndeanForestMerged20171019224850574"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_bosque_nativo20171019230530217"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019222613705"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="eco_zones_UTM20171018220234434"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Dissolved20171019221445113"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019003251923"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019002911454"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171019011301869"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019002821392"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171019000206532"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019002746617"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171019231842093"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019004254686"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019005420713"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019005145480"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="CMN_07_08_2017_WGS8420171018214952510"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Dissolved20171019004922935"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019005217064"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019004339312"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019003917231"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019004203865"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019224114186"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019002821424"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Ecuador_outline20171019001116199"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019223849251"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ecological_zones20171018215013635"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171019224621300"/>
       <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019003547593"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019222921854"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019223056789"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171019010151631"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Andean_forest_remnant20171019231925653"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Overlay20171019233143994"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="eco_zones_UTM20171018220007462"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="ecological_zones_copy20171018215333493"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019222223373"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171019010713642"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019222323907"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019221653363"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="eco_zones_UTM_copy20171018235121882"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019003252104"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019221927979"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019003917199"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019005145445"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019224252973"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Overlay20171019012922287"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019002643172"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019004203837"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019221927897"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="nxprovincias20171020003557417"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019004339282"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019221653272"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019002746646"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019222613791"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Errors20171019004023507"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019222323823"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Conc_in_AF_remnants20171020002856685"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ecological_zones_copy20171018215446901"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019003547556"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019004444205"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cleaned20171019224252943"/>
+      <layer_coordinate_transform destAuthId="EPSG:32717" srcAuthId="EPSG:32717" srcDatumTransform="-1" destDatumTransform="-1" layerid="Overlay20171019234935675"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
     <custom-order enabled="0">
       <item>CMN_07_08_2017_WGS8420171018214952510</item>
-      <item>eco_zones_UTM20171018220234434</item>
-      <item>Ecuador_outline20171019001116199</item>
+      <item>AndeanForestMerged20171019224850574</item>
+      <item>vw_bosque_nativo20171019230530217</item>
+      <item>Andean_forest_remnant20171019231925653</item>
+      <item>Conc_in_AF_remnants20171020002856685</item>
+      <item>nxprovincias20171020003557417</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Concession" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Conc_in_AF_remnants" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="CMN_07_08_2017_WGS8420171018214952510" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="Conc_in_AF_remnants20171020002856685" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="eco_zones_UTM" showFeatureCount="0">
-      <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="eco_zones_UTM20171018220234434" visible="1"/>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Concession" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="CMN_07_08_2017_WGS8420171018214952510" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Ecuador_outline" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Andean_forest_remnant" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Ecuador_outline20171019001116199" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="Andean_forest_remnant20171019231925653" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="AndeanForestMerged" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="AndeanForestMerged20171019224850574" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="vw_bosque_nativo" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="vw_bosque_nativo20171019230530217" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="nxprovincias" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="nxprovincias20171020003557417" visible="1"/>
       </filegroup>
     </legendlayer>
   </legend>
-  <Composer title="AndeanForest" visible="1">
+  <Composer title="AndeanForest" visible="0">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{9bd62af0-b65b-4dde-9b39-351f163b1e2e}" alignmentSnap="1" printResolution="300" paperWidth="251.508" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="211.15" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -195,7 +263,7 @@
             <customproperties/>
           </layer-tree-layer>
         </layer-tree-group>
-        <ComposerItem pagey="120.074" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="157.397" y="120.074" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="93.9609" outlineWidth="0.3" excludeFromExports="0" uuid="{2179ae42-37b0-4a49-82d5-b3733b772f88}" height="22" itemRotation="0" frame="false" pagex="157.397">
+        <ComposerItem pagey="120.074" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="157.397" y="120.074" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="93.9609" outlineWidth="0.3" excludeFromExports="0" uuid="{2179ae42-37b0-4a49-82d5-b3733b772f88}" height="24.8" itemRotation="0" frame="false" pagex="157.397">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -254,7 +322,107 @@
           <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="2.37073" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="213" outlineWidth="0.3" excludeFromExports="0" uuid="{9bd62af0-b65b-4dde-9b39-351f163b1e2e}" height="194" itemRotation="0" frame="false" pagex="0">
+        <ComposerItem pagey="3.80296" page="1" id="" lastValidViewScaleFactor="2.62953" positionMode="0" positionLock="false" x="17.3035" y="3.80296" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="213" outlineWidth="0.3" excludeFromExports="0" uuid="{9bd62af0-b65b-4dde-9b39-351f163b1e2e}" height="194" itemRotation="0" frame="false" pagex="17.3035">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerMap>
+      <customproperties>
+        <property key="svgCropMarginBottom" value="0"/>
+        <property key="svgCropMarginLeft" value="0"/>
+        <property key="svgCropMarginRight" value="0"/>
+        <property key="svgCropMarginTop" value="0"/>
+        <property key="svgCropToContents" value="false"/>
+        <property key="svgGroupLayers" value="true"/>
+      </customproperties>
+    </Composition>
+  </Composer>
+  <Composer title="Remnant_Andean_forest" visible="0">
+    <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{a94d4643-9480-4df0-addb-f523a14f19b4}" alignmentSnap="1" printResolution="300" paperWidth="245" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="220.15" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
+      <symbol alpha="1" clip_to_extent="1" type="fill" name="">
+        <layer pass="0" class="SimpleFill" locked="0">
+          <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="color" v="255,255,255,255"/>
+          <prop k="joinstyle" v="miter"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="0,0,0,255"/>
+          <prop k="outline_style" v="no"/>
+          <prop k="outline_width" v="0.26"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="style" v="solid"/>
+        </layer>
+      </symbol>
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="12.0697" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="/usr/share/qgis/svg/arrows/NorthArrow_11.svg" northOffset="0" pictureHeight="15.2355" mapId="-1" anchorPoint="0">
+        <ComposerItem pagey="15.8203" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="17.1646" y="15.8203" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="15.2355" outlineWidth="0.3" excludeFromExports="0" uuid="{9ec8b9b6-5189-4cea-a350-9d1e002ca595}" height="15.2355" itemRotation="0" frame="false" pagex="17.1646">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerPicture>
+      <ComposerScaleBar lineCapStyle="square" style="Single Box" numMapUnitsPerScaleBarUnit="1000" segmentSizeMode="0" alignment="0" numSegments="4" segmentMillimeters="20.8188" lineJoinStyle="miter" minBarWidth="50" numUnitsPerSegment="75000" units="1" labelBarSpace="3" outlineWidth="0.3" numSegmentsLeft="2" maxBarWidth="150" height="3" boxContentSpace="1" mapId="0" unitLabel="km">
+        <scaleBarFont description="Ubuntu,12,-1,5,50,0,0,0,0,0" style=""/>
+        <fillColor alpha="255" red="0" blue="0" green="0"/>
+        <fillColor2 alpha="255" red="255" blue="255" green="255"/>
+        <strokeColor alpha="255" red="0" blue="0" green="0"/>
+        <textColor alpha="255" red="0" blue="0" green="0"/>
+        <ComposerItem pagey="200" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="17.1646" y="200" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="119.392" outlineWidth="0.3" excludeFromExports="0" uuid="{b5345483-87aa-4bbd-95ea-ff86ad670c7b}" height="20" itemRotation="0" frame="false" pagex="17.1646">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerScaleBar>
+      <ComposerLegend symbolWidth="7" title="" rasterBorderWidth="0" titleAlignment="1" map="0" wmsLegendWidth="50" rasterBorderColor="0,0,0,255" wrapChar="" fontColor="#000000" legendFilterByAtlas="0" columnCount="1" wmsLegendHeight="25" columnSpace="2" symbolHeight="4" equalColumnWidth="0" resizeToContents="1" splitLayer="0" boxSpace="2" rasterBorder="1">
+        <styles>
+          <style marginBottom="2" name="title">
+            <styleFont description="Ubuntu,16,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="group">
+            <styleFont description="Ubuntu,14,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="subgroup">
+            <styleFont description="Ubuntu,12,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="symbol">
+            <styleFont description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" marginLeft="2" name="symbolLabel">
+            <styleFont description="Ubuntu,12,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+        </styles>
+        <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+          <customproperties/>
+          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Conc_in_AF_remnants20171020002856685" source="/home/daniel/Documents/losced/GIS/ourmaps/CloudForests/Conc_in_AF_remnants.shp" name="Conc_in_AF_remnants">
+            <customproperties>
+              <property key="legend/title-label" value="Andean forest remnant under concession"/>
+            </customproperties>
+          </layer-tree-layer>
+          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Andean_forest_remnant20171019231925653" source="/home/daniel/Documents/losced/GIS/native_forests_and_parramos/Andean_forest_remnant/Andean_forest_remnant.shp" name="Andean_forest_remnant">
+            <customproperties>
+              <property key="legend/title-label" value="Andean forest remnant"/>
+            </customproperties>
+          </layer-tree-layer>
+          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="AndeanForestMerged20171019224850574" source="/home/daniel/Documents/losced/GIS/ecological_zones/AndeanForestMerged.shp" name="AndeanForestMerged">
+            <customproperties>
+              <property key="legend/title-label" value="Andean Forest Ecological Zone"/>
+            </customproperties>
+          </layer-tree-layer>
+        </layer-tree-group>
+        <ComposerItem pagey="136.808" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="145.77" y="136.808" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="91.3828" outlineWidth="0.3" excludeFromExports="0" uuid="{c579ea62-584b-4e8b-8fe2-d6bd423d692a}" height="22" itemRotation="0" frame="false" pagex="145.77">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLegend>
+      <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="9444029.82044766657054424" xmin="372382.79689425800461322" ymax="10164533.11547408625483513" xmax="1254999.33330162288621068"/>
+        <LayerSet/>
+        <Grid/>
+        <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="2.23163" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="245" outlineWidth="0.3" excludeFromExports="0" uuid="{a94d4643-9480-4df0-addb-f523a14f19b4}" height="200" itemRotation="0" frame="false" pagex="0">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -271,6 +439,518 @@
     </Composition>
   </Composer>
   <projectlayers>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>513169.96262368047609925</xmin>
+        <ymin>9445881.76034995540976524</ymin>
+        <xmax>920322.89669443503953516</xmax>
+        <ymax>10133126.76119602657854557</ymax>
+      </extent>
+      <id>AndeanForestMerged20171019224850574</id>
+      <datasource>../../ecological_zones/AndeanForestMerged.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>AndeanForestMerged</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=17 +south +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3167</srsid>
+          <srid>32717</srid>
+          <authid>EPSG:32717</authid>
+          <description>WGS 84 / UTM zone 17S</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="Montane">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="area">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="perimeter">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="170,168,28,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>Montane</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name="Ubuntu"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="Montane" index="0" name=""/>
+        <alias field="area" index="1" name=""/>
+        <alias field="perimeter" index="2" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="Montane"/>
+          <column width="-1" hidden="0" type="field" name="area"/>
+          <column width="-1" hidden="0" type="field" name="perimeter"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="Montane" expression=""/>
+        <default field="area" expression=""/>
+        <default field="perimeter" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "Montane", '&lt;NULL>' )</previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>513169.96262368047609925</xmin>
+        <ymin>9446093.67718912847340107</ymin>
+        <xmax>920322.89669443503953516</xmax>
+        <ymax>10132287.29150000028312206</ymax>
+      </extent>
+      <id>Andean_forest_remnant20171019231925653</id>
+      <datasource>../../native_forests_and_parramos/Andean_forest_remnant/Andean_forest_remnant.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Andean_forest_remnant</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=17 +south +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3167</srsid>
+          <srid>32717</srid>
+          <authid>EPSG:32717</authid>
+          <description>WGS 84 / UTM zone 17S</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="a_cat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="a_Montane">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="a_area">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_cat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_gid">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_fcode">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_descr">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_czn">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_uso">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_sce">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_usce">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_txt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_label">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="area">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="perimeter">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="9,134,78,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="9,134,78,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="false"/>
+        <property key="labeling/enabled" value="false"/>
+        <property key="labeling/fieldName" value=""/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="Ubuntu"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="11"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="4294967295"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Medium Italic"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="1"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>b_gid</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name="Ubuntu"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="a_cat" index="0" name=""/>
+        <alias field="a_Montane" index="1" name=""/>
+        <alias field="a_area" index="2" name=""/>
+        <alias field="b_cat" index="3" name=""/>
+        <alias field="b_gid" index="4" name=""/>
+        <alias field="b_fcode" index="5" name=""/>
+        <alias field="b_descr" index="6" name=""/>
+        <alias field="b_czn" index="7" name=""/>
+        <alias field="b_uso" index="8" name=""/>
+        <alias field="b_sce" index="9" name=""/>
+        <alias field="b_usce" index="10" name=""/>
+        <alias field="b_txt" index="11" name=""/>
+        <alias field="b_label" index="12" name=""/>
+        <alias field="area" index="13" name=""/>
+        <alias field="perimeter" index="14" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="-372373665">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="a_cat"/>
+          <column width="-1" hidden="0" type="field" name="a_Montane"/>
+          <column width="-1" hidden="0" type="field" name="a_area"/>
+          <column width="-1" hidden="0" type="field" name="b_cat"/>
+          <column width="-1" hidden="0" type="field" name="b_gid"/>
+          <column width="-1" hidden="0" type="field" name="b_fcode"/>
+          <column width="-1" hidden="0" type="field" name="b_descr"/>
+          <column width="-1" hidden="0" type="field" name="b_czn"/>
+          <column width="-1" hidden="0" type="field" name="b_uso"/>
+          <column width="-1" hidden="0" type="field" name="b_sce"/>
+          <column width="-1" hidden="0" type="field" name="b_usce"/>
+          <column width="-1" hidden="0" type="field" name="b_txt"/>
+          <column width="-1" hidden="0" type="field" name="b_label"/>
+          <column width="-1" hidden="0" type="field" name="area"/>
+          <column width="-1" hidden="0" type="field" name="perimeter"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="a_cat" expression=""/>
+        <default field="a_Montane" expression=""/>
+        <default field="a_area" expression=""/>
+        <default field="b_cat" expression=""/>
+        <default field="b_gid" expression=""/>
+        <default field="b_fcode" expression=""/>
+        <default field="b_descr" expression=""/>
+        <default field="b_czn" expression=""/>
+        <default field="b_uso" expression=""/>
+        <default field="b_sce" expression=""/>
+        <default field="b_usce" expression=""/>
+        <default field="b_txt" expression=""/>
+        <default field="b_label" expression=""/>
+        <default field="area" expression=""/>
+        <default field="perimeter" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "b_gid", '&lt;NULL>' )</previewExpression>
+    </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>-617675.40232908353209496</xmin>
@@ -391,7 +1071,7 @@
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="230,159,0,255"/>
+              <prop k="color" v="189,130,0,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -730,18 +1410,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <extent>
-        <xmin>-732143.48830000101588666</xmin>
-        <ymin>9445216.35009999945759773</ymin>
-        <xmax>1147851.64170000050216913</xmax>
-        <ymax>10189398.35309999994933605</ymax>
-      </extent>
-      <id>Ecuador_outline20171019001116199</id>
-      <datasource>../../limites_administrativas/Ecuador_outline.shp</datasource>
+      <id>Conc_in_AF_remnants20171020002856685</id>
+      <datasource>./Conc_in_AF_remnants.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>Ecuador_outline</layername>
+      <layername>Conc_in_AF_remnants</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=utm +zone=17 +south +datum=WGS84 +units=m +no_defs</proj4>
@@ -762,7 +1436,112 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
-        <edittype widgetv2type="TextEdit" name="DPA_ANIO">
+        <edittype widgetv2type="TextEdit" name="a_cat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="a_a_cat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="a_a_area">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="a_b_cat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="a_b_gid">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="a_b_fcode">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="a_b_descr">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="a_b_czn">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="a_b_uso">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="a_b_sce">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="a_b_usce">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="a_b_txt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="a_b_label">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="a_area">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_cat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_nam">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_com">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_ttm">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_tel">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_adr">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_rep">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_cas">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_plz">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_fei">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_frm">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_sol">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_feo">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_fen">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_rgl">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_tmm">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_txt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_eac">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_ach">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="b_id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="area">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="perimeter">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
@@ -771,12 +1550,12 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="223,225,182,89"/>
+              <prop k="color" v="160,89,96,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="160,89,96,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
@@ -934,7 +1713,7 @@ def my_form_open(dialog, layer, feature):
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
-      <displayfield>DPA_ANIO</displayfield>
+      <displayfield>a_b_gid</displayfield>
       <label>0</label>
       <labelattributes>
         <label fieldname="" text="Label"/>
@@ -959,7 +1738,6 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
-          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
@@ -985,23 +1763,93 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>.</annotationform>
+      <annotationform></annotationform>
       <aliases>
-        <alias field="DPA_ANIO" index="0" name=""/>
+        <alias field="a_cat" index="0" name=""/>
+        <alias field="a_a_cat" index="1" name=""/>
+        <alias field="a_a_area" index="2" name=""/>
+        <alias field="a_b_cat" index="3" name=""/>
+        <alias field="a_b_gid" index="4" name=""/>
+        <alias field="a_b_fcode" index="5" name=""/>
+        <alias field="a_b_descr" index="6" name=""/>
+        <alias field="a_b_czn" index="7" name=""/>
+        <alias field="a_b_uso" index="8" name=""/>
+        <alias field="a_b_sce" index="9" name=""/>
+        <alias field="a_b_usce" index="10" name=""/>
+        <alias field="a_b_txt" index="11" name=""/>
+        <alias field="a_b_label" index="12" name=""/>
+        <alias field="a_area" index="13" name=""/>
+        <alias field="b_cat" index="14" name=""/>
+        <alias field="b_nam" index="15" name=""/>
+        <alias field="b_com" index="16" name=""/>
+        <alias field="b_ttm" index="17" name=""/>
+        <alias field="b_tel" index="18" name=""/>
+        <alias field="b_adr" index="19" name=""/>
+        <alias field="b_rep" index="20" name=""/>
+        <alias field="b_cas" index="21" name=""/>
+        <alias field="b_plz" index="22" name=""/>
+        <alias field="b_fei" index="23" name=""/>
+        <alias field="b_frm" index="24" name=""/>
+        <alias field="b_sol" index="25" name=""/>
+        <alias field="b_feo" index="26" name=""/>
+        <alias field="b_fen" index="27" name=""/>
+        <alias field="b_rgl" index="28" name=""/>
+        <alias field="b_tmm" index="29" name=""/>
+        <alias field="b_txt" index="30" name=""/>
+        <alias field="b_eac" index="31" name=""/>
+        <alias field="b_ach" index="32" name=""/>
+        <alias field="b_id" index="33" name=""/>
+        <alias field="area" index="34" name=""/>
+        <alias field="perimeter" index="35" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="-225915280">
         <columns>
-          <column width="-1" hidden="0" type="field" name="DPA_ANIO"/>
+          <column width="-1" hidden="0" type="field" name="a_cat"/>
+          <column width="-1" hidden="0" type="field" name="a_a_cat"/>
+          <column width="-1" hidden="0" type="field" name="a_a_area"/>
+          <column width="-1" hidden="0" type="field" name="a_b_cat"/>
+          <column width="-1" hidden="0" type="field" name="a_b_gid"/>
+          <column width="-1" hidden="0" type="field" name="a_b_fcode"/>
+          <column width="-1" hidden="0" type="field" name="a_b_descr"/>
+          <column width="-1" hidden="0" type="field" name="a_b_czn"/>
+          <column width="-1" hidden="0" type="field" name="a_b_uso"/>
+          <column width="-1" hidden="0" type="field" name="a_b_sce"/>
+          <column width="-1" hidden="0" type="field" name="a_b_usce"/>
+          <column width="-1" hidden="0" type="field" name="a_b_txt"/>
+          <column width="-1" hidden="0" type="field" name="a_b_label"/>
+          <column width="-1" hidden="0" type="field" name="a_area"/>
+          <column width="-1" hidden="0" type="field" name="b_cat"/>
+          <column width="-1" hidden="0" type="field" name="b_nam"/>
+          <column width="-1" hidden="0" type="field" name="b_com"/>
+          <column width="-1" hidden="0" type="field" name="b_ttm"/>
+          <column width="-1" hidden="0" type="field" name="b_tel"/>
+          <column width="-1" hidden="0" type="field" name="b_adr"/>
+          <column width="-1" hidden="0" type="field" name="b_rep"/>
+          <column width="-1" hidden="0" type="field" name="b_cas"/>
+          <column width="-1" hidden="0" type="field" name="b_plz"/>
+          <column width="-1" hidden="0" type="field" name="b_fei"/>
+          <column width="-1" hidden="0" type="field" name="b_frm"/>
+          <column width="-1" hidden="0" type="field" name="b_sol"/>
+          <column width="-1" hidden="0" type="field" name="b_feo"/>
+          <column width="-1" hidden="0" type="field" name="b_fen"/>
+          <column width="-1" hidden="0" type="field" name="b_rgl"/>
+          <column width="-1" hidden="0" type="field" name="b_tmm"/>
+          <column width="-1" hidden="0" type="field" name="b_txt"/>
+          <column width="-1" hidden="0" type="field" name="b_eac"/>
+          <column width="-1" hidden="0" type="field" name="b_ach"/>
+          <column width="-1" hidden="0" type="field" name="b_id"/>
+          <column width="-1" hidden="0" type="field" name="area"/>
+          <column width="-1" hidden="0" type="field" name="perimeter"/>
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>.</editform>
+      <editform></editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitfilepath></editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -1027,23 +1875,52 @@ def my_form_open(dialog, layer, feature):
         <fieldstyles/>
       </conditionalstyles>
       <defaults>
-        <default field="DPA_ANIO" expression=""/>
+        <default field="a_cat" expression=""/>
+        <default field="a_a_cat" expression=""/>
+        <default field="a_a_area" expression=""/>
+        <default field="a_b_cat" expression=""/>
+        <default field="a_b_gid" expression=""/>
+        <default field="a_b_fcode" expression=""/>
+        <default field="a_b_descr" expression=""/>
+        <default field="a_b_czn" expression=""/>
+        <default field="a_b_uso" expression=""/>
+        <default field="a_b_sce" expression=""/>
+        <default field="a_b_usce" expression=""/>
+        <default field="a_b_txt" expression=""/>
+        <default field="a_b_label" expression=""/>
+        <default field="a_area" expression=""/>
+        <default field="b_cat" expression=""/>
+        <default field="b_nam" expression=""/>
+        <default field="b_com" expression=""/>
+        <default field="b_ttm" expression=""/>
+        <default field="b_tel" expression=""/>
+        <default field="b_adr" expression=""/>
+        <default field="b_rep" expression=""/>
+        <default field="b_cas" expression=""/>
+        <default field="b_plz" expression=""/>
+        <default field="b_fei" expression=""/>
+        <default field="b_frm" expression=""/>
+        <default field="b_sol" expression=""/>
+        <default field="b_feo" expression=""/>
+        <default field="b_fen" expression=""/>
+        <default field="b_rgl" expression=""/>
+        <default field="b_tmm" expression=""/>
+        <default field="b_txt" expression=""/>
+        <default field="b_eac" expression=""/>
+        <default field="b_ach" expression=""/>
+        <default field="b_id" expression=""/>
+        <default field="area" expression=""/>
+        <default field="perimeter" expression=""/>
       </defaults>
       <previewExpression></previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <extent>
-        <xmin>513169.96262368047609925</xmin>
-        <ymin>9445881.76034995540976524</ymin>
-        <xmax>923822.89654322504065931</xmax>
-        <ymax>10133126.76119602657854557</ymax>
-      </extent>
-      <id>eco_zones_UTM20171018220234434</id>
-      <datasource>../../ecological_zones/eco_zones_UTM.shp</datasource>
+      <id>nxprovincias20171020003557417</id>
+      <datasource>../../limites_administrativas/nxprovincias.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>eco_zones_UTM</layername>
+      <layername>nxprovincias</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=utm +zone=17 +south +datum=WGS84 +units=m +no_defs</proj4>
@@ -1064,197 +1941,34 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
-        <edittype widgetv2type="TextEdit" name="GRIDCODE">
+        <edittype widgetv2type="TextEdit" name="DPA_PROVIN">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="AREA">
+        <edittype widgetv2type="TextEdit" name="DPA_DESPRO">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="PERIMETER">
+        <edittype widgetv2type="TextEdit" name="DPA_VALOR">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="SQ_MILES">
+        <edittype widgetv2type="TextEdit" name="DPA_ANIO">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="SQ_KM">
+        <edittype widgetv2type="TextEdit" name="REI_CODIGO">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="Montane">
+        <edittype widgetv2type="TextEdit" name="REN_CODIGO">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="EcoZone">
+        <edittype widgetv2type="TextEdit" name="PEE_CODIGO">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 attr="GRIDCODE" forceraster="0" symbollevels="0" type="categorizedSymbol" enableorderby="0">
-        <categories>
-          <category render="false" symbol="0" value="1" label="Matorral Interandino"/>
-          <category render="false" symbol="1" value="2" label="Bosque Deciduo de la Costa"/>
-          <category render="true" symbol="2" value="3" label="Bosque Montano Occidental"/>
-          <category render="true" symbol="3" value="4" label="Bosque Piemontano Oriental"/>
-          <category render="true" symbol="4" value="5" label="Bosque Montano Oriental"/>
-          <category render="true" symbol="5" value="6" label="Bosque Piemontano Occidental"/>
-          <category render="false" symbol="6" value="7" label="Bosque Húmedo Tropical Amazónico"/>
-          <category render="false" symbol="7" value="8" label="Bosque Húmedo Tropical del Chocó"/>
-          <category render="false" symbol="8" value="9" label="Matorral Seco de la Costa"/>
-          <category render="false" symbol="9" value="10" label="Paramo"/>
-          <category render="false" symbol="10" value="" label=""/>
-        </categories>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="251,224,44,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="222,255,141,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="10">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="100,226,57,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="2">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="46,125,15,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="3">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="46,125,15,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="4">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="46,125,15,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="5">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="46,125,15,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="6">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="140,110,68,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="7">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="94,124,164,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="8">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="101,101,99,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="9">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="0,0,0,255"/>
+              <prop k="color" v="242,244,198,89"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1267,23 +1981,6 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
         </symbols>
-        <source-symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="29,113,128,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-        </source-symbol>
         <rotation/>
         <sizescale scalemethod="diameter"/>
       </renderer-v2>
@@ -1315,11 +2012,11 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="false"/>
         <property key="labeling/enabled" value="false"/>
-        <property key="labeling/fieldName" value="EcoZone"/>
+        <property key="labeling/fieldName" value=""/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
         <property key="labeling/fontFamily" value="Ubuntu"/>
-        <property key="labeling/fontItalic" value="true"/>
+        <property key="labeling/fontItalic" value="false"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
         <property key="labeling/fontMaxPixelSize" value="10000"/>
@@ -1329,10 +2026,10 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/fontStrikeout" value="false"/>
         <property key="labeling/fontUnderline" value="false"/>
-        <property key="labeling/fontWeight" value="63"/>
+        <property key="labeling/fontWeight" value="50"/>
         <property key="labeling/fontWordSpacing" value="0"/>
         <property key="labeling/formatNumbers" value="false"/>
-        <property key="labeling/isExpression" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
         <property key="labeling/labelOffsetInMapUnits" value="true"/>
         <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/labelPerPart" value="false"/>
@@ -1434,7 +2131,7 @@ def my_form_open(dialog, layer, feature):
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
-      <displayfield>GRIDCODE</displayfield>
+      <displayfield>DPA_PROVIN</displayfield>
       <label>0</label>
       <labelattributes>
         <label fieldname="" text="Label"/>
@@ -1459,7 +2156,6 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
-          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
@@ -1485,35 +2181,35 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>.</annotationform>
+      <annotationform></annotationform>
       <aliases>
-        <alias field="GRIDCODE" index="0" name=""/>
-        <alias field="AREA" index="1" name=""/>
-        <alias field="PERIMETER" index="2" name=""/>
-        <alias field="SQ_MILES" index="3" name=""/>
-        <alias field="SQ_KM" index="4" name=""/>
-        <alias field="Montane" index="5" name=""/>
-        <alias field="EcoZone" index="6" name=""/>
+        <alias field="DPA_PROVIN" index="0" name=""/>
+        <alias field="DPA_DESPRO" index="1" name=""/>
+        <alias field="DPA_VALOR" index="2" name=""/>
+        <alias field="DPA_ANIO" index="3" name=""/>
+        <alias field="REI_CODIGO" index="4" name=""/>
+        <alias field="REN_CODIGO" index="5" name=""/>
+        <alias field="PEE_CODIGO" index="6" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;Montane&quot;" sortOrder="1">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="-1627528960">
         <columns>
-          <column width="-1" hidden="0" type="field" name="GRIDCODE"/>
-          <column width="-1" hidden="0" type="field" name="AREA"/>
-          <column width="-1" hidden="0" type="field" name="PERIMETER"/>
-          <column width="-1" hidden="0" type="field" name="SQ_MILES"/>
-          <column width="-1" hidden="0" type="field" name="SQ_KM"/>
+          <column width="-1" hidden="0" type="field" name="DPA_PROVIN"/>
+          <column width="-1" hidden="0" type="field" name="DPA_DESPRO"/>
+          <column width="-1" hidden="0" type="field" name="DPA_VALOR"/>
+          <column width="-1" hidden="0" type="field" name="DPA_ANIO"/>
+          <column width="-1" hidden="0" type="field" name="REI_CODIGO"/>
+          <column width="-1" hidden="0" type="field" name="REN_CODIGO"/>
+          <column width="-1" hidden="0" type="field" name="PEE_CODIGO"/>
           <column width="-1" hidden="1" type="actions"/>
-          <column width="-1" hidden="0" type="field" name="Montane"/>
-          <column width="-1" hidden="0" type="field" name="EcoZone"/>
         </columns>
       </attributetableconfig>
-      <editform>.</editform>
+      <editform></editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitfilepath></editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -1539,15 +2235,190 @@ def my_form_open(dialog, layer, feature):
         <fieldstyles/>
       </conditionalstyles>
       <defaults>
-        <default field="GRIDCODE" expression=""/>
-        <default field="AREA" expression=""/>
-        <default field="PERIMETER" expression=""/>
-        <default field="SQ_MILES" expression=""/>
-        <default field="SQ_KM" expression=""/>
-        <default field="Montane" expression=""/>
-        <default field="EcoZone" expression=""/>
+        <default field="DPA_PROVIN" expression=""/>
+        <default field="DPA_DESPRO" expression=""/>
+        <default field="DPA_VALOR" expression=""/>
+        <default field="DPA_ANIO" expression=""/>
+        <default field="REI_CODIGO" expression=""/>
+        <default field="REN_CODIGO" expression=""/>
+        <default field="PEE_CODIGO" expression=""/>
       </defaults>
-      <previewExpression>COALESCE( "GRIDCODE", '&lt;NULL>' )</previewExpression>
+      <previewExpression></previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>510725.43219999969005585</xmin>
+        <ymin>9445216.34999999962747097</ymin>
+        <xmax>1147535.08579999953508377</xmax>
+        <ymax>10160766.31880000047385693</ymax>
+      </extent>
+      <id>vw_bosque_nativo20171019230530217</id>
+      <datasource>../../native_forests_and_parramos/vw_bosque_nativo/vw_bosque_nativo.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>vw_bosque_nativo</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=17 +south +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3167</srsid>
+          <srid>32717</srid>
+          <authid>EPSG:32717</authid>
+          <description>WGS 84 / UTM zone 17S</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="gid">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fcode">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="descr">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="czn">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dpa_despro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="uso">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="sce">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="usce">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="txt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="simbologia">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="152,22,203,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>gid</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name="Ubuntu"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="gid" index="0" name=""/>
+        <alias field="fcode" index="1" name=""/>
+        <alias field="descr" index="2" name=""/>
+        <alias field="czn" index="3" name=""/>
+        <alias field="dpa_despro" index="4" name=""/>
+        <alias field="uso" index="5" name=""/>
+        <alias field="sce" index="6" name=""/>
+        <alias field="usce" index="7" name=""/>
+        <alias field="txt" index="8" name=""/>
+        <alias field="simbologia" index="9" name=""/>
+        <alias field="label" index="10" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="gid"/>
+          <column width="-1" hidden="0" type="field" name="fcode"/>
+          <column width="-1" hidden="0" type="field" name="descr"/>
+          <column width="-1" hidden="0" type="field" name="czn"/>
+          <column width="-1" hidden="0" type="field" name="dpa_despro"/>
+          <column width="-1" hidden="0" type="field" name="uso"/>
+          <column width="-1" hidden="0" type="field" name="sce"/>
+          <column width="-1" hidden="0" type="field" name="usce"/>
+          <column width="-1" hidden="0" type="field" name="txt"/>
+          <column width="-1" hidden="0" type="field" name="simbologia"/>
+          <column width="-1" hidden="0" type="field" name="label"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="gid" expression=""/>
+        <default field="fcode" expression=""/>
+        <default field="descr" expression=""/>
+        <default field="czn" expression=""/>
+        <default field="dpa_despro" expression=""/>
+        <default field="uso" expression=""/>
+        <default field="sce" expression=""/>
+        <default field="usce" expression=""/>
+        <default field="txt" expression=""/>
+        <default field="simbologia" expression=""/>
+        <default field="label" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "gid", '&lt;NULL>' )</previewExpression>
     </maplayer>
   </projectlayers>
   <properties>
@@ -1603,10 +2474,16 @@ def my_form_open(dialog, layer, feature):
       <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
         <value>CMN_07_08_2017_WGS8420171018214952510</value>
-        <value>Ecuador_outline20171019001116199</value>
-        <value>eco_zones_UTM20171018220234434</value>
+        <value>AndeanForestMerged20171019224850574</value>
+        <value>vw_bosque_nativo20171019230530217</value>
+        <value>Andean_forest_remnant20171019231925653</value>
+        <value>Conc_in_AF_remnants20171020002856685</value>
+        <value>nxprovincias20171020003557417</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
@@ -1617,8 +2494,14 @@ def my_form_open(dialog, layer, feature):
         <value>2</value>
         <value>2</value>
         <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
@@ -1626,6 +2509,9 @@ def my_form_open(dialog, layer, feature):
       <DefaultSnapType type="QString">off</DefaultSnapType>
       <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
