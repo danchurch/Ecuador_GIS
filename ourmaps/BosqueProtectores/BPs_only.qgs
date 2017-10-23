@@ -5,7 +5,7 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="car_bosques_protectores20171014183320355" source="/home/daniel/Documents/losced/GIS/BP_and_parks/mireya/car_bosques_protectores.shp" name="car_bosques_protectores">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="car_bosques_protectores20171014183320355" source="/home/daniel/Documents/losced/GIS/BP_and_parks/sni_cobertura_2015/car_bosques_protectores.shp" name="car_bosques_protectores">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="poblados20171014183446154" source="/home/daniel/Documents/losced/GIS/centros_poblados/poblado_1000000/poblados.shp|layerid=0|subset=&quot;nombre&quot; = &quot;Quito&quot;  OR &quot;nombre&quot; = &quot;Guayaquil&quot;" name="poblados">
@@ -20,9 +20,9 @@
     <units>meters</units>
     <extent>
       <xmin>450951.40528443455696106</xmin>
-      <ymin>9660464.43177538178861141</ymin>
+      <ymin>9661281.4518954586237669</ymin>
       <xmax>1160941.88962995586916804</xmax>
-      <ymax>9941508.85168895311653614</ymax>
+      <ymax>9942325.87180902995169163</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -70,7 +70,7 @@
     </legendlayer>
   </legend>
   <Composer title="BPs_only" visible="1">
-    <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{d3d56835-46a5-45e0-a019-20a9f717cd0e}" alignmentSnap="1" printResolution="300" paperWidth="297" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="210" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
+    <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{d3d56835-46a5-45e0-a019-20a9f717cd0e}" alignmentSnap="1" printResolution="300" paperWidth="206.402" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="196.15" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
           <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -106,40 +106,40 @@
         </styles>
         <layer-tree-group expanded="1" checked="Qt::Checked" name="">
           <customproperties/>
-          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="car_bosques_protectores20171014183320355" source="/home/daniel/Documents/losced/GIS/BP_and_parks/mireya/car_bosques_protectores.shp" name="car_bosques_protectores">
+          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="car_bosques_protectores20171014183320355" source="/home/daniel/Documents/losced/GIS/BP_and_parks/sni_cobertura_2015/car_bosques_protectores.shp" name="car_bosques_protectores">
             <customproperties>
               <property key="legend/title-label" value="Bosque protector"/>
             </customproperties>
           </layer-tree-layer>
         </layer-tree-group>
-        <ComposerItem pagey="137.309" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="166.765" y="137.309" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="46.4875" outlineWidth="0.3" excludeFromExports="0" uuid="{2eaed70c-dcaf-4fd7-a23f-7075bd8ec8b4}" height="10" itemRotation="0" frame="false" pagex="166.765">
+        <ComposerItem pagey="131.907" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="138.826" y="131.907" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="46.4875" outlineWidth="0.3" excludeFromExports="0" uuid="{2eaed70c-dcaf-4fd7-a23f-7075bd8ec8b4}" height="10" itemRotation="0" frame="false" pagex="138.826">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
         </ComposerItem>
       </ComposerLegend>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="20.8221" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="/usr/share/qgis/svg/arrows/NorthArrow_11.svg" northOffset="0" pictureHeight="26.2836" mapId="-1" anchorPoint="0">
-        <ComposerItem pagey="6" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="12.6887" y="6" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="38.066" outlineWidth="0.3" excludeFromExports="0" uuid="{dd5d4076-46f3-42b2-a292-0dda71a47ffa}" height="26.2836" itemRotation="0" frame="false" pagex="12.6887">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="16.9003" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="/usr/share/qgis/svg/arrows/NorthArrow_11.svg" northOffset="0" pictureHeight="21.3331" mapId="-1" anchorPoint="0">
+        <ComposerItem pagey="13.1663" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="13.7546" y="13.1663" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="30.8964" outlineWidth="0.3" excludeFromExports="0" uuid="{dd5d4076-46f3-42b2-a292-0dda71a47ffa}" height="21.3331" itemRotation="0" frame="false" pagex="13.7546">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
           <customproperties/>
         </ComposerItem>
       </ComposerPicture>
-      <ComposerScaleBar lineCapStyle="square" style="Single Box" numMapUnitsPerScaleBarUnit="1000" segmentSizeMode="0" alignment="0" numSegments="4" segmentMillimeters="13.3064" lineJoinStyle="miter" minBarWidth="50" numUnitsPerSegment="50000" units="1" labelBarSpace="3" outlineWidth="0.3" numSegmentsLeft="2" maxBarWidth="150" height="3" boxContentSpace="1" mapId="0" unitLabel="km">
+      <ComposerScaleBar lineCapStyle="square" style="Single Box" numMapUnitsPerScaleBarUnit="1000" segmentSizeMode="0" alignment="0" numSegments="4" segmentMillimeters="13.5557" lineJoinStyle="miter" minBarWidth="50" numUnitsPerSegment="50000" units="1" labelBarSpace="3" outlineWidth="0.3" numSegmentsLeft="2" maxBarWidth="150" height="3" boxContentSpace="1" mapId="0" unitLabel="km">
         <scaleBarFont description="Ubuntu,12,-1,5,50,0,0,0,0,0" style=""/>
         <fillColor alpha="255" red="0" blue="0" green="0"/>
         <fillColor2 alpha="255" red="255" blue="255" green="255"/>
         <strokeColor alpha="255" red="0" blue="0" green="0"/>
         <textColor alpha="255" red="0" blue="0" green="0"/>
-        <ComposerItem pagey="177.642" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="104.911" y="177.642" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="81.8304" outlineWidth="0.3" excludeFromExports="0" uuid="{ddaca936-7f85-4312-a48b-f3736dd6791c}" height="20" itemRotation="0" frame="false" pagex="104.911">
+        <ComposerItem pagey="171.792" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="97.911" y="171.792" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="83.077" outlineWidth="0.3" excludeFromExports="0" uuid="{ddaca936-7f85-4312-a48b-f3736dd6791c}" height="20" itemRotation="0" frame="false" pagex="97.911">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
         </ComposerItem>
       </ComposerScaleBar>
       <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="9432257.70320336893200874" xmin="437551.64711590897059068" ymax="10169715.58026096597313881" xmax="1174341.64779848139733076"/>
+        <Extent ymin="9439863.74865884333848953" xmin="444335.43479720439063385" ymax="10163743.57504564523696899" xmax="1167557.86011718609370291"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{25dea040-ae83-4287-9f22-aa7bcc433891}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -191,7 +191,7 @@
           <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="6" page="1" id="" lastValidViewScaleFactor="2.2067" positionMode="0" positionLock="false" x="7" y="6" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="195.822" outlineWidth="0.3" excludeFromExports="0" uuid="{d3d56835-46a5-45e0-a019-20a9f717cd0e}" height="196" itemRotation="0" frame="false" pagex="7">
+        <ComposerItem pagey="0.15" page="1" id="" lastValidViewScaleFactor="2.23163" positionMode="0" positionLock="false" x="0" y="0.15" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="195.822" outlineWidth="0.3" excludeFromExports="0" uuid="{d3d56835-46a5-45e0-a019-20a9f717cd0e}" height="196" itemRotation="0" frame="false" pagex="0">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -209,7 +209,7 @@
         <ymax>10124302.20189999975264072</ymax>
       </extent>
       <id>car_bosques_protectores20171014183320355</id>
-      <datasource>../Documents/losced/GIS/BP_and_parks/mireya/car_bosques_protectores.shp</datasource>
+      <datasource>../../BP_and_parks/sni_cobertura_2015/car_bosques_protectores.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -273,12 +273,12 @@
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="51,196,37,255"/>
+              <prop k="color" v="50,191,36,204"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="26,97,19,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
@@ -321,7 +321,7 @@
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
         <property key="labeling/fontFamily" value="Ubuntu"/>
-        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontItalic" value="true"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
         <property key="labeling/fontMaxPixelSize" value="10000"/>
@@ -331,7 +331,7 @@
         <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/fontStrikeout" value="false"/>
         <property key="labeling/fontUnderline" value="false"/>
-        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWeight" value="63"/>
         <property key="labeling/fontWordSpacing" value="0"/>
         <property key="labeling/formatNumbers" value="false"/>
         <property key="labeling/isExpression" value="true"/>
@@ -571,7 +571,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>10189398.35309999994933605</ymax>
       </extent>
       <id>nxprovincias20171014183404384</id>
-      <datasource>../Documents/losced/GIS/limites_administrativas/nxprovincias.shp</datasource>
+      <datasource>../../limites_administrativas/nxprovincias.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -903,7 +903,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>poblados20171014183446154</id>
-      <datasource>../Documents/losced/GIS/centros_poblados/poblado_1000000/poblados.shp|layerid=0|subset="nombre" = "Quito"  OR "nombre" = "Guayaquil"</datasource>
+      <datasource>../../centros_poblados/poblado_1000000/poblados.shp|layerid=0|subset="nombre" = "Quito"  OR "nombre" = "Guayaquil"</datasource>
       <keywordList>
         <value></value>
       </keywordList>

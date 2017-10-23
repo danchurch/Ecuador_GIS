@@ -8,7 +8,7 @@
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="poblados20171012175536594" source="/home/daniel/Documents/losced/GIS/centros_poblados/poblado_1000000/poblados.shp|layerid=0|subset=&quot;nombre&quot; = 'QUITO' OR &quot;nombre&quot; = &quot;GUAYAQUIL&quot;" name="poblados">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Checked" id="CMN_07_08_2017_WGS8420171012172239086" source="/home/daniel/Documents/losced/GIS/concesiones/concessions_07_08_2017/CMN_07_08_2017/CMN_07_08_2017_WGS84.shp" name="CMN_07_08_2017_WGS84">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="CMN_07_08_2017_WGS8420171012172239086" source="/home/daniel/Documents/losced/GIS/concesiones/concessions_07_08_2017/CMN_07_08_2017/CMN_07_08_2017_WGS84.shp" name="CMN_07_08_2017_WGS84">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="nxprovincias20171012175843360" source="/home/daniel/Documents/losced/GIS/limites_administrativas/nxprovincias.shp" name="nxprovincias">
@@ -19,10 +19,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>449004.00904720363905653</xmin>
-      <ymin>9467952.73858365975320339</ymin>
-      <xmax>1164207.14497838844545186</xmax>
-      <ymax>10121128.90593097545206547</ymax>
+      <xmin>439788.61492746829753742</xmin>
+      <ymin>9478526.64668089337646961</ymin>
+      <xmax>1154991.75085864728316665</xmax>
+      <ymax>10131702.81402820535004139</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -62,8 +62,8 @@
         <legendlayerfile isInOverview="0" layerid="poblados20171012175536594" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="CMN_07_08_2017_WGS84" showFeatureCount="0">
-      <filegroup open="false" hidden="false">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="CMN_07_08_2017_WGS84" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" layerid="CMN_07_08_2017_WGS8420171012172239086" visible="1"/>
       </filegroup>
     </legendlayer>
@@ -73,7 +73,7 @@
       </filegroup>
     </legendlayer>
   </legend>
-  <Composer title="concessions_only" visible="1">
+  <Composer title="concessions_only" visible="0">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{a0b61e82-fe43-4d81-8c5d-e9d70be46e34}" alignmentSnap="1" printResolution="300" paperWidth="281.691" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="206" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -112,18 +112,19 @@
           <customproperties/>
           <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="CMN_07_08_2017_WGS8420171012172239086" source="/home/daniel/Documents/losced/GIS/concesiones/concessions_07_08_2017/CMN_07_08_2017/CMN_07_08_2017_WGS84.shp" name="CMN_07_08_2017_WGS84">
             <customproperties>
-              <property key="legend/node-order" value="0,2"/>
+              <property key="legend/node-order" value="0,1,2"/>
+              <property key="legend/title-label" value="State of authorization in August 2017"/>
             </customproperties>
           </layer-tree-layer>
         </layer-tree-group>
-        <ComposerItem pagey="57.8386" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="207.964" y="57.8386" visibility="1" zValue="8" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="54.125" outlineWidth="0.3" excludeFromExports="0" uuid="{f5a73e55-6071-416c-908d-8996695c39e6}" height="23.4" itemRotation="0" frame="false" pagex="207.964">
+        <ComposerItem pagey="112.398" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="173.789" y="112.398" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="75.1766" outlineWidth="0.3" excludeFromExports="0" uuid="{f5a73e55-6071-416c-908d-8996695c39e6}" height="29.4" itemRotation="0" frame="false" pagex="173.789">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
         </ComposerItem>
       </ComposerLegend>
       <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="9432560.53141593001782894" xmin="396745.20217897783732042" ymax="10175435.94898702576756477" xmax="1210162.08226489345543087"/>
+        <Extent ymin="9440517.50455764308571815" xmin="398171.7798055483144708" ymax="10169711.95615145564079285" xmax="1196608.58598056714981794"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{5d38aabd-9ca3-4373-996d-1c9d1472140d}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -175,27 +176,27 @@
           <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="2.35137" positionMode="0" positionLock="false" x="-3.40227" y="0" visibility="1" zValue="7" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="219.505" outlineWidth="0.3" excludeFromExports="0" uuid="{a0b61e82-fe43-4d81-8c5d-e9d70be46e34}" height="200.469" itemRotation="0" frame="false" pagex="-3.40227">
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="2.34091" positionMode="0" positionLock="false" x="-3.40227" y="0" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="219.505" outlineWidth="0.3" excludeFromExports="0" uuid="{a0b61e82-fe43-4d81-8c5d-e9d70be46e34}" height="200.469" itemRotation="0" frame="false" pagex="-3.40227">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
         </ComposerItem>
       </ComposerMap>
       <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="14.042" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="/usr/share/qgis/svg/arrows/NorthArrow_11.svg" northOffset="0" pictureHeight="17.7251" mapId="0" anchorPoint="0">
-        <ComposerItem pagey="16.1034" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="16.354" y="16.1034" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="18.8557" outlineWidth="0.3" excludeFromExports="0" uuid="{b9b5f78f-5793-4104-8dac-992bf281b81d}" height="17.7251" itemRotation="0" frame="false" pagex="16.354">
+        <ComposerItem pagey="16.1034" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="16.354" y="16.1034" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="18.8557" outlineWidth="0.3" excludeFromExports="0" uuid="{b9b5f78f-5793-4104-8dac-992bf281b81d}" height="17.7251" itemRotation="0" frame="false" pagex="16.354">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
           <customproperties/>
         </ComposerItem>
       </ComposerPicture>
-      <ComposerScaleBar lineCapStyle="square" style="Single Box" numMapUnitsPerScaleBarUnit="1000" segmentSizeMode="0" alignment="0" numSegments="4" segmentMillimeters="20.2679" lineJoinStyle="miter" minBarWidth="50" numUnitsPerSegment="75000" units="1" labelBarSpace="3" outlineWidth="0.3" numSegmentsLeft="2" maxBarWidth="150" height="3" boxContentSpace="1" mapId="0" unitLabel="km">
+      <ComposerScaleBar lineCapStyle="square" style="Single Box" numMapUnitsPerScaleBarUnit="1000" segmentSizeMode="0" alignment="0" numSegments="4" segmentMillimeters="20.6467" lineJoinStyle="miter" minBarWidth="50" numUnitsPerSegment="75000" units="1" labelBarSpace="3" outlineWidth="0.3" numSegmentsLeft="2" maxBarWidth="150" height="3" boxContentSpace="1" mapId="0" unitLabel="km">
         <scaleBarFont description="Ubuntu,12,-1,5,50,0,0,0,0,0" style=""/>
         <fillColor alpha="255" red="0" blue="0" green="0"/>
         <fillColor2 alpha="255" red="255" blue="255" green="255"/>
         <strokeColor alpha="255" red="0" blue="0" green="0"/>
         <textColor alpha="255" red="0" blue="0" green="0"/>
-        <ComposerItem pagey="193.021" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="6.77076" y="193.021" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="116.638" outlineWidth="0.3" excludeFromExports="0" uuid="{1e58664d-6d01-450f-84f4-644e9c8a472b}" height="20" itemRotation="0" frame="false" pagex="6.77076">
+        <ComposerItem pagey="193.021" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="6.77076" y="193.021" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="118.532" outlineWidth="0.3" excludeFromExports="0" uuid="{1e58664d-6d01-450f-84f4-644e9c8a472b}" height="20" itemRotation="0" frame="false" pagex="6.77076">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -343,7 +344,7 @@
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="230,159,0,255"/>
+              <prop k="outline_color" v="149,127,78,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
@@ -373,7 +374,7 @@
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="86,180,233,255"/>
+              <prop k="outline_color" v="65,130,164,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>

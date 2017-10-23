@@ -24,10 +24,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>430208.89313818328082561</xmin>
-      <ymin>9487452.50927402637898922</ymin>
-      <xmax>1174137.8522303244099021</xmax>
-      <ymax>10112669.40042593143880367</ymax>
+      <xmin>755826.6484998146770522</xmin>
+      <ymin>10014534.29214750416576862</ymin>
+      <xmax>839758.6069251176668331</xmax>
+      <ymax>10105372.36515682376921177</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -76,8 +76,8 @@
       </filegroup>
     </legendlayer>
   </legend>
-  <Composer title="BP_Concession_overlap" visible="0">
-    <Composition resizeToContentsMarginLeft="0.2" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{53f29c8a-fbbe-457a-846b-1d2bdb64f4a1}" alignmentSnap="1" printResolution="300" paperWidth="297" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="210" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
+  <Composer title="BP_Concession_overlap" visible="1">
+    <Composition resizeToContentsMarginLeft="0.2" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{53f29c8a-fbbe-457a-846b-1d2bdb64f4a1}" alignmentSnap="1" printResolution="300" paperWidth="206.095" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="176.48" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
           <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -129,14 +129,14 @@
             </customproperties>
           </layer-tree-layer>
         </layer-tree-group>
-        <ComposerItem pagey="129.581" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="114.547" y="129.581" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="94.0266" outlineWidth="0.3" excludeFromExports="0" uuid="{7ffd63a6-067a-4451-9f17-4f40e23f4e91}" height="22" itemRotation="0" frame="false" pagex="114.547">
+        <ComposerItem pagey="107.326" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="111.918" y="107.326" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="94.0266" outlineWidth="0.3" excludeFromExports="0" uuid="{7ffd63a6-067a-4451-9f17-4f40e23f4e91}" height="22" itemRotation="0" frame="false" pagex="111.918">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
         </ComposerItem>
       </ComposerLegend>
-      <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="9439835.53752876073122025" xmin="381454.58017006050795317" ymax="10166540.12160333245992661" xmax="1246141.04729676526039839"/>
+      <ComposerMap followPreset="false" mapRotation="4" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="9441208.66656271368265152" xmin="382827.55822933930903673" ymax="10167913.25063728541135788" xmax="1247514.02535604406148195"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{7156e211-d355-4d9c-b18d-f49f4cd9d8c4}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -188,14 +188,14 @@
           <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="22.4051" page="1" id="" lastValidViewScaleFactor="4.74146" positionMode="0" positionLock="false" x="5.80984" y="22.4051" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="188" outlineWidth="0.3" excludeFromExports="0" uuid="{53f29c8a-fbbe-457a-846b-1d2bdb64f4a1}" height="158" itemRotation="0" frame="false" pagex="5.80984">
+        <ComposerItem pagey="0.15" page="1" id="" lastValidViewScaleFactor="2.23163" positionMode="0" positionLock="false" x="3.18088" y="0.15" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="188" outlineWidth="0.3" excludeFromExports="0" uuid="{53f29c8a-fbbe-457a-846b-1d2bdb64f4a1}" height="158" itemRotation="0" frame="false" pagex="3.18088">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
         </ComposerItem>
       </ComposerMap>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="14.1996" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="/usr/share/qgis/svg/arrows/NorthArrow_11.svg" northOffset="0" pictureHeight="17.9241" mapId="0" anchorPoint="0">
-        <ComposerItem pagey="22.4051" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="17.9241" y="22.4051" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="21.0608" outlineWidth="0.3" excludeFromExports="0" uuid="{24d6a171-51f7-40df-82c9-5dea24152ab4}" height="17.9241" itemRotation="0" frame="false" pagex="17.9241">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="4" pictureWidth="13.4871" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="/usr/share/qgis/svg/arrows/NorthArrow_11.svg" northOffset="0" pictureHeight="17.0248" mapId="0" anchorPoint="0">
+        <ComposerItem pagey="0.15" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="15.2951" y="0.15" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="21.0608" outlineWidth="0.3" excludeFromExports="0" uuid="{24d6a171-51f7-40df-82c9-5dea24152ab4}" height="17.9241" itemRotation="0" frame="false" pagex="15.2951">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
@@ -208,7 +208,7 @@
         <fillColor2 alpha="255" red="255" blue="255" green="255"/>
         <strokeColor alpha="255" red="0" blue="0" green="0"/>
         <textColor alpha="255" red="0" blue="0" green="0"/>
-        <ComposerItem pagey="191.585" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="2.97896" y="191.585" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="96.8309" outlineWidth="0.3" excludeFromExports="0" uuid="{d388a5d7-0a57-4e68-aeff-ee4d50d53059}" height="20" itemRotation="0" frame="false" pagex="2.97896">
+        <ComposerItem pagey="156.33" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0.35" y="156.33" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="96.8309" outlineWidth="0.3" excludeFromExports="0" uuid="{d388a5d7-0a57-4e68-aeff-ee4d50d53059}" height="20" itemRotation="0" frame="false" pagex="0.35">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -220,7 +220,7 @@
         <property key="svgCropMarginRight" value="0"/>
         <property key="svgCropMarginTop" value="0"/>
         <property key="svgCropToContents" value="false"/>
-        <property key="svgGroupLayers" value="false"/>
+        <property key="svgGroupLayers" value="true"/>
       </customproperties>
     </Composition>
   </Composer>
@@ -380,7 +380,7 @@
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="104,51,56,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
@@ -423,7 +423,7 @@
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
         <property key="labeling/fontFamily" value="Ubuntu"/>
-        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontItalic" value="true"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
         <property key="labeling/fontMaxPixelSize" value="10000"/>
@@ -433,7 +433,7 @@
         <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/fontStrikeout" value="false"/>
         <property key="labeling/fontUnderline" value="false"/>
-        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWeight" value="63"/>
         <property key="labeling/fontWordSpacing" value="0"/>
         <property key="labeling/formatNumbers" value="false"/>
         <property key="labeling/isExpression" value="true"/>
@@ -868,7 +868,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="152,104,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
@@ -911,7 +911,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
         <property key="labeling/fontFamily" value="Ubuntu"/>
-        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontItalic" value="true"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
         <property key="labeling/fontMaxPixelSize" value="10000"/>
@@ -921,7 +921,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/fontStrikeout" value="false"/>
         <property key="labeling/fontUnderline" value="false"/>
-        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWeight" value="63"/>
         <property key="labeling/fontWordSpacing" value="0"/>
         <property key="labeling/formatNumbers" value="false"/>
         <property key="labeling/isExpression" value="true"/>
@@ -1267,12 +1267,12 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="50,191,36,255"/>
+              <prop k="color" v="50,191,36,203"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="26,97,19,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
@@ -1315,7 +1315,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
         <property key="labeling/fontFamily" value="Ubuntu"/>
-        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontItalic" value="true"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
         <property key="labeling/fontMaxPixelSize" value="10000"/>
@@ -1325,7 +1325,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/fontStrikeout" value="false"/>
         <property key="labeling/fontUnderline" value="false"/>
-        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWeight" value="63"/>
         <property key="labeling/fontWordSpacing" value="0"/>
         <property key="labeling/formatNumbers" value="false"/>
         <property key="labeling/isExpression" value="true"/>
@@ -1659,7 +1659,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
         <property key="labeling/fontFamily" value="Ubuntu"/>
-        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontItalic" value="true"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
         <property key="labeling/fontMaxPixelSize" value="10000"/>
@@ -1669,7 +1669,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/fontStrikeout" value="false"/>
         <property key="labeling/fontUnderline" value="false"/>
-        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWeight" value="63"/>
         <property key="labeling/fontWordSpacing" value="0"/>
         <property key="labeling/formatNumbers" value="false"/>
         <property key="labeling/isExpression" value="true"/>
