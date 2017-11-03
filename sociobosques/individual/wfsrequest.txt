@@ -1,0 +1,1 @@
+http://mapainteractivo.ambiente.gob.ec:80/geoserver/geosuia/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=geosuia:car_psb_beneficiario_individual&outputFormat=SHAPE-ZIP
