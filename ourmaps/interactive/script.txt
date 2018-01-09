@@ -1,0 +1,11 @@
+## trying to figure out making a clickable map for the website
+
+## got a geojson of the provinces from qgis conversion of the ecuadorian
+## provinces
+
+## convert to a topojson?
+
+## sudo npm install -g topojson-server
+
+geo2topo provinces=provinces.geojson > provinces.json
+

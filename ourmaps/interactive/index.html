@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+<svg id='chart' width="1000" height="1000px">
+<!-- 
+<path d="M150 0 L75 200 L225 200 Z" />
+-->
+</svg>
+</body>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<script>
+
+d3.json("provinces.geojson", function(error, prov){
+    if (error) throw error;
+
+    ////////////////////////////
+    var scale = 1000,
+      translateX = 3000,
+      translateY = 500;
+    ////////////////////////////
+
+    var projection = d3.geoTransverseMercator()
+      .scale(scale)
+      .translate( [translateX, translateY]);
+    var geoGenerator = d3.geoPath()
+      .projection(projection);
+    var u = d3.select('#chart')
+      .selectAll('path')
+      .data(prov.features);
+
+
+    u.enter()
+      .append('path')
+      .attr('d', geoGenerator)
+      //.style('stroke', 'black')
+      //.style('stroke-width', 1);
+})
+    
+
+</script>
