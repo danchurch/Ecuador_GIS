@@ -9,3 +9,20 @@
 
 geo2topo provinces=provinces.geojson > provinces.json
 
+## worked, I think, but let's look at the geojson first..
+## can we break it up a little? It's just one line 
+## right now...
+
+head -c 300 provinces.geojson
+
+less provinces.geojson
+
+## to put a line break for end curly with a comma:
+
+cp provinces.geojson foo.txt
+sed 's/},/},\n/g' foo.txt | sed 's/],/],\n/g' > foo2.txt
+
+head foo2.txt
+mv foo2.txt niceprovince.geojson
+
+

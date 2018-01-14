@@ -2,9 +2,6 @@
 <meta charset="utf-8">
 <body>
 <svg id='chart' width="1000" height="1000px">
-<!-- 
-<path d="M150 0 L75 200 L225 200 Z" />
--->
 </svg>
 </body>
 
@@ -30,13 +27,12 @@ d3.json("provinces.geojson", function(error, prov){
       .selectAll('path')
       .data(prov.features);
 
-
     u.enter()
       .append('path')
       .attr('d', geoGenerator)
-      //.style('stroke', 'black')
+      .attr('fill', 'none')
+      .style('stroke', 'black')
       //.style('stroke-width', 1);
 })
     
-
 </script>
