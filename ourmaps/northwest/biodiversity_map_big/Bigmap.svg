@@ -14,9 +14,9 @@
    id="svg2"
    inkscape:version="0.91 r13725"
    sodipodi:docname="Bigmap.svg"
-   inkscape:export-filename="/home/daniel/Desktop/Bigmap.png"
-   inkscape:export-xdpi="154.14301"
-   inkscape:export-ydpi="154.14301">
+   inkscape:export-filename="/home/daniel/Documents/losced/Ecuador_GIS/ourmaps/northwest/biodiversity_map_big/Bigmap.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
   <metadata
      id="metadata1674">
     <rdf:RDF>
@@ -36,7 +36,7 @@
      objecttolerance="10"
      gridtolerance="10"
      guidetolerance="10"
-     inkscape:pageopacity="0"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:window-width="1215"
      inkscape:window-height="1000"
@@ -47,8 +47,8 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="0.89719064"
-     inkscape:cx="284.86369"
-     inkscape:cy="348.78896"
+     inkscape:cx="260.82141"
+     inkscape:cy="336.17783"
      inkscape:window-x="1431"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -99,20 +99,6 @@
      font-weight="400"
      font-size="45.8333"
      transform="matrix(11.8095,0,0,11.8095,164.99365,188.0255)" />
-  <g
-     style="font-style:normal;font-weight:400;font-size:45.83330154px;font-family:Ubuntu;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
-     id="g26"
-     font-style="normal"
-     font-weight="400"
-     font-size="45.8333"
-     transform="matrix(11.8095,0,0,11.8095,166.8513,188.0255)">
-    <path
-       style="fill-rule:evenodd"
-       inkscape:connector-curvature="0"
-       id="path28"
-       d="m 0,0 137.643,0 0,157.741 L 0,157.741 0,0"
-       vector-effect="non-scaling-stroke" />
-  </g>
   <g
      style="font-style:normal;font-weight:400;font-size:45.83330154px;font-family:Ubuntu;fill:#74d1f8;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.07039714;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="g36"
@@ -4406,7 +4392,7 @@
      transform="matrix(11.8095,0,0,11.8095,164.99365,2155.7176)" />
   <g
      id="g7592"
-     transform="translate(449.13921,-2043.9139)">
+     transform="translate(628.13363,-2014.1914)">
     <g
        stroke-miterlimit="2"
        transform="matrix(11.8095,0,0,11.8095,61.1556,2069.97)"
@@ -4953,7 +4939,7 @@
          height="18.12709"
          x="469.72809"
          y="92.211723" /></flowRegion><flowPara
-       id="flowPara7854"></flowPara></flowRoot>  <text
+       id="flowPara7854" /></flowRoot>  <text
      xml:space="preserve"
      style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45.83343887px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.25px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
      x="1619.6866"
@@ -4963,7 +4949,7 @@
        sodipodi:role="line"
        id="tspan7860"
        x="1619.6866"
-       y="592.78082"></tspan></text>
+       y="592.78082" /></text>
   <text
      xml:space="preserve"
      style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45.83343887px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.25px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
@@ -4994,18 +4980,18 @@
        xml:space="preserve" />
   </g>
   <g
-     id="g8316"
-     transform="translate(-24.512824,58.451757)">
+     id="g5295"
+     transform="translate(-11.145929,69.931325)">
     <g
-       transform="translate(127.48237,472.48238)"
-       id="g7897">
+       transform="translate(173.33374,19.999151)"
+       id="g5074">
       <g
          style="font-style:normal;font-weight:400;font-size:45.83330154px;font-family:Ubuntu;fill:#000000;fill-opacity:0;fill-rule:evenodd;stroke:#ca390d;stroke-width:11.81099987;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
          id="g1550"
          font-style="normal"
          font-weight="400"
          font-size="45.8333"
-         transform="matrix(0.999873,0,0,0.999873,1163.3327,-471.52008)">
+         transform="matrix(0.999873,0,0,0.999873,1266.3023,59.41406)">
         <path
            style="fill-rule:evenodd"
            inkscape:connector-curvature="0"
@@ -5019,7 +5005,7 @@
          font-style="normal"
          font-weight="400"
          font-size="42"
-         transform="matrix(1.18095,0,0,1.18095,1139.7137,-518.76008)">
+         transform="matrix(1.18095,0,0,1.18095,1242.6833,4.1839016)">
         <text
            style="font-style:normal;font-weight:400;font-size:42px;font-family:Ubuntu;fill:#000000;fill-opacity:1;stroke:none"
            id="text1558"
@@ -5028,19 +5014,21 @@
            font-size="42"
            y="76"
            x="110"
-           xml:space="preserve">Areas of study</text>
+           xml:space="preserve"><tspan
+             style="font-size:31.75417137px"
+             id="tspan4987">Areas of study</tspan></text>
       </g>
     </g>
     <g
-       transform="translate(127.48237,482.50924)"
-       id="g7903">
+       transform="translate(168.96423,13.149502)"
+       id="g5081">
       <g
          style="font-style:normal;font-weight:400;font-size:45.83330154px;font-family:Ubuntu;fill:#fc9356;fill-opacity:0.49019602;fill-rule:evenodd;stroke:#000000;stroke-width:3.07086992;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:0.49019602"
          id="g1574"
          font-style="normal"
          font-weight="400"
          font-size="45.8333"
-         transform="matrix(0.999873,0,0,0.999873,1163.3327,-400.14797)">
+         transform="matrix(0.999873,0,0,0.999873,1266.3023,140.81303)">
         <path
            style="fill-rule:evenodd"
            inkscape:connector-curvature="0"
@@ -5054,7 +5042,7 @@
          font-style="normal"
          font-weight="400"
          font-size="42"
-         transform="matrix(1.18095,0,0,1.18095,1139.7137,-589.09797)">
+         transform="matrix(1.18095,0,0,1.18095,1242.6833,-56.131128)">
         <text
            style="font-style:normal;font-weight:400;font-size:42px;font-family:Ubuntu;fill:#000000;fill-opacity:1;stroke:none"
            id="text1582"
@@ -5063,19 +5051,21 @@
            font-size="42"
            y="196"
            x="110"
-           xml:space="preserve">Exploratory concession</text>
+           xml:space="preserve"><tspan
+             style="font-size:31.75417137px"
+             id="tspan4989">Exploratory concession</tspan></text>
       </g>
     </g>
     <g
-       transform="translate(127.48237,489.82096)"
-       id="g7909">
+       transform="translate(168.96423,2.9881936)"
+       id="g5088">
       <g
          style="font-style:normal;font-weight:400;font-size:45.83330154px;font-family:Ubuntu;fill:#eeeb03;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.07086992;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
          id="g1586"
          font-style="normal"
          font-weight="400"
          font-size="45.8333"
-         transform="matrix(0.999873,0,0,0.999873,1163.3327,-327.11857)">
+         transform="matrix(0.999873,0,0,0.999873,1266.3023,221.15415)">
         <path
            style="fill-rule:evenodd"
            inkscape:connector-curvature="0"
@@ -5089,7 +5079,7 @@
          font-style="normal"
          font-weight="400"
          font-size="42"
-         transform="matrix(1.18095,0,0,1.18095,1139.7137,-586.92857)">
+         transform="matrix(1.18095,0,0,1.18095,1242.6833,-46.647008)">
         <text
            style="font-style:normal;font-weight:400;font-size:42px;font-family:Ubuntu;fill:#000000;fill-opacity:1;stroke:none"
            id="text1594"
@@ -5098,46 +5088,44 @@
            font-size="42"
            y="256"
            x="110"
-           xml:space="preserve">Awá territory</text>
+           xml:space="preserve"><tspan
+             style="font-size:31.75417137px"
+             id="tspan4991">Awá territory</tspan></text>
       </g>
     </g>
     <g
-       transform="translate(127.48237,471.0571)"
-       id="g7932">
+       transform="translate(168.96423,-20.528302)"
+       id="g5095">
       <path
          vector-effect="none"
-         d="m 1163.3327,-198.2343 81.9896,0 0,46.99403 -81.9896,0 0,-46.99403"
+         d="m 1266.3023,331.27456 81.9895,0 0,46.99403 -81.9895,0 0,-46.99403"
          id="path1600"
          inkscape:connector-curvature="0"
          style="font-style:normal;font-weight:400;font-size:medium;font-family:Ubuntu;fill:#1bb80a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.07047987;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1" />
       <text
          xml:space="preserve"
          style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45.83343887px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.25px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-         x="1269.9171"
-         y="-191.07503"
+         x="1372.8867"
+         y="342.41528"
          id="text7862"
          sodipodi:linespacing="125%"><tspan
            sodipodi:role="line"
-           x="1269.9171"
-           y="-191.07503"
-           style="font-size:49.5834465px"
+           x="1372.8867"
+           y="342.41528"
+           style="font-size:37.50008774px"
            id="tspan7870">National system of </tspan><tspan
            sodipodi:role="line"
-           x="1269.9171"
-           y="-129.09572"
-           style="font-size:49.5834465px"
+           x="1372.8867"
+           y="389.29041"
+           style="font-size:37.50008774px"
            id="tspan7874">protected areas</tspan></text>
     </g>
-  </g>
-  <g
-     id="g8338"
-     transform="translate(104.02843,70.466)">
     <g
-       transform="translate(1.01e-4,-54.228143)"
-       id="g8021">
+       transform="translate(40.42303,-52.750463)"
+       id="g5101">
       <g
          id="g7915"
-         transform="translate(127.48227,614.85278)">
+         transform="translate(231.5108,631.09064)">
         <g
            transform="matrix(0.999873,0,0,0.999873,1163.3327,-180.99003)"
            font-size="45.8333"
@@ -5159,7 +5147,7 @@
          font-style="normal"
          font-weight="400"
          font-size="42"
-         transform="matrix(1.18095,0,0,1.18095,1267.196,32.34275)">
+         transform="matrix(1.18095,0,0,1.18095,1371.2245,39.216698)">
         <text
            style="font-style:normal;font-weight:400;font-size:42px;font-family:Ubuntu;fill:#000000;fill-opacity:1;stroke:none"
            id="text1618"
@@ -5168,19 +5156,21 @@
            font-size="42"
            y="376"
            x="110"
-           xml:space="preserve">Bosques protector</text>
+           xml:space="preserve"><tspan
+             style="font-size:31.75417137px"
+             id="tspan4993">Bosques protector</tspan></text>
       </g>
     </g>
     <g
-       transform="translate(1.01e-4,71.480964)"
-       id="g8076">
+       transform="translate(40.42303,-93.33358)"
+       id="g5116">
       <g
          style="font-style:normal;font-weight:400;font-size:45.83330154px;font-family:Ubuntu;fill:#dddeb1;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.07086992;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
          id="g1622"
          font-style="normal"
          font-weight="400"
          font-size="45.8333"
-         transform="matrix(0.999873,0,0,0.999873,1290.815,512.64452)">
+         transform="matrix(0.999873,0,0,0.999873,1394.8435,654.59148)">
         <path
            style="fill-rule:evenodd"
            inkscape:connector-curvature="0"
@@ -5194,7 +5184,7 @@
          font-style="normal"
          font-weight="400"
          font-size="42"
-         transform="matrix(1.18095,0,0,1.18095,1267.196,40.26452)">
+         transform="matrix(1.18095,0,0,1.18095,1371.2245,176.75058)">
         <text
            style="font-style:normal;font-weight:400;font-size:42px;font-family:Ubuntu;fill:#000000;fill-opacity:1;stroke:none"
            id="text1630"
@@ -5203,19 +5193,21 @@
            font-size="42"
            y="436"
            x="110"
-           xml:space="preserve">Provinces</text>
+           xml:space="preserve"><tspan
+             style="font-size:31.75417137px"
+             id="tspan4995">Provinces</tspan></text>
       </g>
     </g>
     <g
-       transform="translate(1.01e-4,897.33445)"
-       id="g8069">
+       transform="translate(40.42303,-74.841554)"
+       id="g5109">
       <g
          style="font-style:normal;font-weight:400;font-size:45.83330154px;font-family:Ubuntu;fill:#866f2c;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.07086992;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
          id="g1622-2"
          font-style="normal"
          font-weight="400"
          font-size="45.8333"
-         transform="matrix(0.999873,0,0,0.999873,1290.815,-413.65486)"
+         transform="matrix(0.999873,0,0,0.999873,1394.8435,554.14559)"
          inkscape:transform-center-x="-37.153097"
          inkscape:transform-center-y="-7.4305873">
         <path
@@ -5228,20 +5220,20 @@
       <text
          xml:space="preserve"
          style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:49.58345032px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.25px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-         x="1398.0492"
-         y="-404.33319"
+         x="1502.0778"
+         y="567.0863"
          id="text8059"
          sodipodi:linespacing="125%"><tspan
            sodipodi:role="line"
            id="tspan8061"
-           x="1398.0492"
-           y="-404.33319"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">Bosque protector</tspan><tspan
+           x="1502.0778"
+           y="567.0863"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.50008774px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">Bosque protector</tspan><tspan
            sodipodi:role="line"
-           x="1398.0492"
-           y="-342.35388"
+           x="1502.0778"
+           y="613.96143"
            id="tspan8063"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">in concession</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.50008774px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">in concession</tspan></text>
     </g>
   </g>
   <text

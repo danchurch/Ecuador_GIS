@@ -29,10 +29,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>715893.39431220456026495</xmin>
-      <ymin>10024390.07731006853282452</ymin>
-      <xmax>800993.97773233964107931</xmax>
-      <ymax>10062619.87786190025508404</ymax>
+      <xmin>780226.57777638954576105</xmin>
+      <ymin>10037051.56210879795253277</ymin>
+      <xmax>790864.15070390643086284</xmax>
+      <ymax>10041830.28717778436839581</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -1343,7 +1343,7 @@
         <property key="labeling/enabled" value="true"/>
         <property key="labeling/fieldName" value="NOMBRE"/>
         <property key="labeling/fontBold" value="true"/>
-        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontCapitals" value="4"/>
         <property key="labeling/fontFamily" value="Ubuntu"/>
         <property key="labeling/fontItalic" value="true"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
