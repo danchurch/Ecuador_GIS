@@ -9,14 +9,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="471.55014mm"
-   height="247.58737mm"
-   viewBox="0 0 1670.847 877.27809"
+   width="471.55011mm"
+   height="247.08882mm"
+   viewBox="0 0 1670.8469 875.51157"
    id="svg6343"
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="Bigmap_intag_combo_v2.svg"
-   inkscape:export-filename="/home/daniel/Documents/losced/Ecuador_GIS/ourmaps/northwest/Bigmap_intag/Bigmap_intag_combo_v2"
+   inkscape:export-filename="/home/daniel/Documents/losced/Ecuador_GIS/ourmaps/northwest/Bigmap_intag/Bigmap_intag_combo.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
   <defs
@@ -560,7 +560,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
      inkscape:cx="961.72633"
-     inkscape:cy="826.47888"
+     inkscape:cy="824.71241"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -591,7 +591,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      style="display:inline"
-     transform="translate(627.15942,-34.408002)">
+     transform="translate(627.15942,-34.408032)">
     <rect
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.70397019;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect10034"
@@ -2726,7 +2726,7 @@
      inkscape:label="legend"
      style="display:inline"
      sodipodi:insensitive="true"
-     transform="translate(627.15942,-34.408002)">
+     transform="translate(627.15942,-34.408032)">
     <g
        id="g12726"
        transform="translate(-341.43156,-282.84271)">
@@ -3058,7 +3058,7 @@
      id="layer3"
      inkscape:label="Intag"
      style="display:inline"
-     transform="translate(627.15942,-34.408002)">
+     transform="translate(627.15942,-34.408032)">
     <g
        id="g12876"
        transform="translate(-2.8571429,-400)">
