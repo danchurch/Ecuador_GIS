@@ -13,7 +13,10 @@
    viewBox="0 0 3330.7613 2359.63"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="intag_map.svg">
+   sodipodi:docname="intag_map.svg"
+   inkscape:export-filename="/home/daniel/Documents/losced/Ecuador_GIS/ourmaps/northwest/intag/intag_map.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
   <metadata
      id="metadata900">
     <rdf:RDF>
@@ -39,17 +42,18 @@
      inkscape:window-height="744"
      id="namedview898"
      showgrid="false"
-     inkscape:zoom="0.8602763"
-     inkscape:cx="575.2605"
-     inkscape:cy="264.63444"
+     inkscape:zoom="0.60830721"
+     inkscape:cx="563.05527"
+     inkscape:cy="311.13118"
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
-     inkscape:current-layer="Layer 12"
+     inkscape:current-layer="Layer 6"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     borderlayer="false" />
   <defs
      id="defs4">
     <clipPath
@@ -613,7 +617,7 @@
      inkscape:groupmode="layer"
      id="Layer 3"
      style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
-     transform="translate(-71.241352,-19.621843)">
+     transform="translate(-71.240844,-19.621843)">
     <g
        font-style="normal"
        font-weight="400"
@@ -731,7 +735,7 @@
      inkscape:groupmode="layer"
      id="Layer 6"
      style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
-     transform="translate(-71.241352,-19.621843)">
+     transform="translate(-71.240844,-19.621843)">
     <g
        id="g6076"
        clip-path="url(#clipPath6298)">
@@ -909,7 +913,7 @@
      inkscape:groupmode="layer"
      id="Layer 4"
      style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
-     transform="translate(-71.241352,-19.621843)">
+     transform="translate(-71.240844,-19.621843)">
     <g
        font-style="normal"
        font-weight="400"
@@ -1211,7 +1215,7 @@
      inkscape:groupmode="layer"
      id="Layer 5"
      style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
-     transform="translate(-71.241352,-19.621843)">
+     transform="translate(-71.240844,-19.621843)">
     <g
        font-style="normal"
        font-weight="400"
@@ -1502,7 +1506,7 @@
      inkscape:groupmode="layer"
      id="Layer 7"
      style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
-     transform="translate(-71.241352,-19.621843)">
+     transform="translate(-71.240844,-19.621843)">
     <path
        style="font-style:normal;font-weight:400;font-size:medium;font-family:Ubuntu;fill:#000000;fill-opacity:0;fill-rule:evenodd;stroke:none"
        inkscape:connector-curvature="0"
@@ -1646,7 +1650,7 @@
      id="layer1"
      inkscape:label="Intag_reserves"
      style="display:inline"
-     transform="translate(-71.241352,-19.621843)">
+     transform="translate(-71.240844,-19.621843)">
     <g
        font-style="normal"
        font-weight="400"
@@ -2499,7 +2503,7 @@
      inkscape:groupmode="layer"
      id="Layer 12"
      style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
-     transform="translate(-71.241352,-19.621843)">
+     transform="translate(-71.240844,-19.621843)">
     <g
        font-style="normal"
        font-weight="400"
@@ -2726,7 +2730,7 @@
            height="26.3025"
            x="604.95752"
            y="842.63324" /></flowRegion><flowPara
-         id="flowPara5446"></flowPara></flowRoot>    <g
+         id="flowPara5446" /></flowRoot>    <g
        id="g5592"
        transform="translate(-8.2195439,-126.03301)"
        clip-path="url(#clipPath6110)">
@@ -2969,5 +2973,5 @@
      id="layer2"
      inkscape:label="clip_poly"
      style="display:inline"
-     transform="translate(-71.241352,-19.621843)" />
+     transform="translate(-71.240844,-19.621843)" />
 </svg>
