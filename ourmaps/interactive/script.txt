@@ -1,28 +1,74 @@
-## trying to figure out making a clickable map for the website
+## okay, and made a sample index file to show this.
+## but with the thousands of concessions, I think 
+## we'll need to set up a database to display them
 
-## got a geojson of the provinces from qgis conversion of the ecuadorian
-## provinces
+## move into python, setup mongoDB for this:
 
-## convert to a topojson?
+python3
 
-## sudo npm install -g topojson-server
+import json
+import pandas as pd
+from pymongo import MongoClient
 
-geo2topo provinces=provinces.geojson > provinces.json
+## initialize db
+client=MongoClient()
+db = client.concessions
+coll = db.conc_01_2018 ## will be concession collection
 
-## worked, I think, but let's look at the geojson first..
-## can we break it up a little? It's just one line 
-## right now...
+## okay, but we want our concessions into a json, 
+## then into a list of dictionaries, I think,
+## to feed into the mongodb
 
-head -c 300 provinces.geojson
+## make df
+aa = pd.read_csv('Conc_01_18.csv')
 
-less provinces.geojson
+## df to json
+aa.to_json('Conc_01_18.json', orient="records")
 
-## to put a line break for end curly with a comma:
+## json to dictionaries
+with open('Conc_01_18.json') as f:
+    bb = json.load(f)
 
-cp provinces.geojson foo.txt
-sed 's/},/},\n/g' foo.txt | sed 's/],/],\n/g' > foo2.txt
+## list of dictionary to mongodb collection
 
-head foo2.txt
-mv foo2.txt niceprovince.geojson
+coll.insert(bb)
 
+bb[0]
 
+## test ride, find lc concessions:
+
+lcs = coll.find({'nam':'40000339'})
+list(lcs)
+
+lcs = coll.find({'nam':'40000340'})
+list(lcs)
+
+lcs = coll.find( { '$or': [ {'nam':'40000339'}, {'nam':'40000340'} ] } )
+list(lcs)
+
+## ok, pretty simple. Can we do the same with the
+## cantons? Try them as a geojson from qgis...
+
+## json to dictionaries
+with open('cantons.geojson') as f:
+    cc = json.load(f)
+
+## did this work?
+
+len(cc['features']) ##224
+
+cc['features'][0].keys()
+
+cc['features'][0]['properties'] ## 
+
+zz = cc['features']
+
+##  looks good. we want these features as a collection, I think:
+
+cants = db.cantons 
+ 
+cants.insert(cc['features'])
+
+## did this work?
+
+dd = cants.find(
