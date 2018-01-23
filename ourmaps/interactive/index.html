@@ -1,38 +1,136 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<body>
-<svg id='chart' width="1000" height="1000px">
-</svg>
-</body>
+<meta charset='utf-8'>
 
+<style>
+
+    .province {
+      fill: #ccc;
+    }
+
+    .background {
+      fill: none;
+      pointer-events: all;
+    }
+
+/*
+    .feature:hover {
+        fill: blue;
+    }
+*/
+
+    .feature.active {
+      fill: black;
+    }
+
+</style>
+
+<svg width="960" height="720"></svg>
+
+<!-- get d3 -->
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
-<script>
+<!-- js -->
+<script> 
 
-d3.json("provinces.geojson", function(error, prov){
+var svg = d3.select("svg")
+  .on("click", stopped, true)
+  ;
+
+var active = d3.select(null),
+  width = +svg.attr("width"),
+  height = +svg.attr("height");
+
+var zoom = d3.zoom()
+  .scaleExtent([1,8])
+  .on("zoom",zoomed)
+  ;
+
+svg.append("rect")
+  .attr("class", "background")
+  .attr("width", width)
+  .attr("height", height)
+  .on("click", reset)
+;
+
+var g = svg.append("g");
+
+svg.call(zoom); // turn on for wheel zoom
+
+d3.json("provinces.geojson", function(error, prov) {
     if (error) throw error;
 
-    ////////////////////////////
-    var scale = 1000,
-      translateX = 3000,
-      translateY = 500;
-    ////////////////////////////
+    // make these global:
+   projection = d3.geoMercator().fitSize([width, height], prov);
+   path = d3.geoPath().projection(projection);
 
-    var projection = d3.geoTransverseMercator()
-      .scale(scale)
-      .translate( [translateX, translateY]);
-    var geoGenerator = d3.geoPath()
-      .projection(projection);
-    var u = d3.select('#chart')
-      .selectAll('path')
-      .data(prov.features);
-
-    u.enter()
+    g.selectAll('path')
+      .data(prov.features)
+      .enter()
       .append('path')
-      .attr('d', geoGenerator)
-      .attr('fill', 'none')
+      .attr('d', path)
+      .attr("class", "feature province")
       .style('stroke', 'black')
-      //.style('stroke-width', 1);
+      .attr('fill', '#f1f4c7')
+      .on("click", clicked);
+
+
 })
-    
+
+//d3.json("Conc_01_2018.geojson", function(error, conc) {
+//    if (error) throw error;
+//
+//    var projection = d3.geoMercator().fitSize([width, height], conc);
+//    var path = d3.geoPath().projection(projection);
+//    var v = d3.select('svg')
+//      .selectAll('path')
+//      .data(conc.features);
+//
+//    v.enter()
+//      .append('path')
+//      .attr('d', path)
+//      .attr("class", "concession")
+//      .attr('fill', '#fa278a')
+//      .style('stroke', 'black');
+//})
+
+function clicked(d) {
+  if (active.node() === this) return reset();
+  active.classed("active", false);
+  active = d3.select(this).classed("active", true);
+
+   var bounds = path.bounds(d),
+       dx = bounds[1][0] - bounds[0][0],
+       dy = bounds[1][1] - bounds[0][1],
+       x = (bounds[0][0] + bounds[1][0]) / 2,
+       y = (bounds[0][1] + bounds[1][1]) / 2,
+       scale = Math.max(1, Math.min(8, 0.9 / Math.max(dx / width, dy / height))),
+       translate = [width / 2 - scale * x, height / 2 - scale * y];
+
+console.log(scale)
+
+   svg.transition()
+      .duration(750)
+      .call( zoom.transform, d3.zoomIdentity.translate(translate[0],translate[1]).scale(scale) ) 
+}
+
+function reset() {
+  active.classed("active", false);
+  active = d3.select(null);
+
+  svg.transition()
+      .duration(750)
+      .call( zoom.transform, d3.zoomIdentity ); 
+}
+
+function zoomed() {
+  g.style("stroke-width", 1.5 / d3.event.transform.k + "px");
+  g.attr("transform", d3.event.transform);
+}
+
+// If the drag behavior prevents the default click,
+// also stop propagation so we don’t click-to-zoom.
+function stopped() {
+  if (d3.event.defaultPrevented) d3.event.stopPropagation();
+}
+
 </script>
