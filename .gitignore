@@ -2,3 +2,4 @@
 *.lock
 IBAs/BirdsOfTheWorld/
 *.*~
+*.sw*
