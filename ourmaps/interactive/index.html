@@ -7,24 +7,29 @@
       fill: #ccc;
     }
 
+    .province.active {
+      fill: blue;
+      opacity: 0.5;
+    }
+
+    .concession {
+      fill: #808080 ;
+    }
+
     .background {
       fill: none;
       pointer-events: all;
     }
 
-/*
     .feature:hover {
-        fill: blue;
+        fill: red;
+      opacity: 0.2;
     }
-*/
 
-    .feature.active {
-      fill: black;
-    }
 
 </style>
 
-<svg width="960" height="720"></svg>
+<svg width="800" height="600"></svg>
 
 <!-- get d3 -->
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -76,22 +81,25 @@ d3.json("provinces.geojson", function(error, prov) {
 
 })
 
-//d3.json("Conc_01_2018.geojson", function(error, conc) {
-//    if (error) throw error;
-//
-//    var projection = d3.geoMercator().fitSize([width, height], conc);
-//    var path = d3.geoPath().projection(projection);
-//    var v = d3.select('svg')
-//      .selectAll('path')
-//      .data(conc.features);
-//
-//    v.enter()
-//      .append('path')
-//      .attr('d', path)
-//      .attr("class", "concession")
-//      .attr('fill', '#fa278a')
-//      .style('stroke', 'black');
-//})
+d3.json("Conc_01_2018.geojson", function(error, conc) {
+    if (error) throw error;
+
+    // make these global:
+   projection = d3.geoMercator().fitSize([width, height], conc);
+   path = d3.geoPath().projection(projection);
+
+    g.selectAll('path')
+      .data(conc.features)
+      .enter()
+      .append('path')
+      .attr('d', path)
+      .attr("class", "feature concession")
+      .style('stroke', 'black')
+      .attr('fill', '#f1f4c7')
+      .on("click", clicked);
+
+
+})
 
 function clicked(d) {
   if (active.node() === this) return reset();
