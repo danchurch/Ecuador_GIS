@@ -61,10 +61,13 @@ var g = svg.append("g");
 
 svg.call(zoom); // turn on for wheel zoom
 
+// global projection/path:
+var projection, path;
+
 d3.json("provinces.geojson", function(error, prov) {
     if (error) throw error;
 
-    // make these global:
+    // define our projection from provinces
    projection = d3.geoMercator().fitSize([width, height], prov);
    path = d3.geoPath().projection(projection);
 
@@ -78,15 +81,10 @@ d3.json("provinces.geojson", function(error, prov) {
       .attr('fill', '#f1f4c7')
       .on("click", clicked);
 
-
 })
 
 d3.json("Conc_01_2018.geojson", function(error, conc) {
     if (error) throw error;
-
-    // make these global:
-   projection = d3.geoMercator().fitSize([width, height], conc);
-   path = d3.geoPath().projection(projection);
 
     g.selectAll('path')
       .data(conc.features)
@@ -114,7 +112,6 @@ function clicked(d) {
        scale = Math.max(1, Math.min(8, 0.9 / Math.max(dx / width, dy / height))),
        translate = [width / 2 - scale * x, height / 2 - scale * y];
 
-console.log(scale)
 
    svg.transition()
       .duration(750)
