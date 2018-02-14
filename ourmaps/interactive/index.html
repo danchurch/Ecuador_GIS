@@ -53,7 +53,6 @@ var active = d3.select(null),
   width = +svg.attr("width"),
   height = +svg.attr("height");
 
-
 svg.append("rect")
   .attr("class", "background")
   .attr("width", width)
@@ -84,39 +83,55 @@ d3.json("provinces.geojson", function(error, prov) {
       .on("click", clicked)
        ;
 
-// draw bosques protectores
+// draw towns
 
-    d3.json("bosques_protectores.geojson", function(error, BP) {
+    d3.json("towns_50000.geojson", function(error, town) {
         if (error) throw error;
 
         g.selectAll('path')
-          .data(BP.features)
+          .data(town.features)
           .enter()
           .append('path')
           .attr('d', path)
-          .attr("class", "feature BP")
+          .attr("class", "feature town")
           .style('stroke', 'green')
           .attr('fill', '#f1f4c7')
            ;
     }); 
 
-// draw concessions
+// draw bosques protectores
 
-    d3.json("Conc_01_2018.geojson", function(error, conc) {
-        if (error) throw error;
-
-        g.selectAll('path')
-          .data(conc.features)
-          .enter()
-          .append('path')
-          .attr('d', path)
-          .attr("class", "feature concession")
-          .style('stroke', 'red')
-          .attr('fill', '#f1f4c7')
-      //  .on("click", clicked)
-           ;
-    }); 
-})
+//    d3.json("bosques_protectores.geojson", function(error, BP) {
+//        if (error) throw error;
+//
+//        g.selectAll('path')
+//          .data(BP.features)
+//          .enter()
+//          .append('path')
+//          .attr('d', path)
+//          .attr("class", "feature BP")
+//          .style('stroke', 'green')
+//          .attr('fill', '#f1f4c7')
+//           ;
+//    }); 
+//
+//// draw concessions
+//
+//    d3.json("Conc_01_2018.geojson", function(error, conc) {
+//        if (error) throw error;
+//
+//        g.selectAll('path')
+//          .data(conc.features)
+//          .enter()
+//          .append('path')
+//          .attr('d', path)
+//          .attr("class", "feature concession")
+//          .style('stroke', 'red')
+//          .attr('fill', '#f1f4c7')
+//      //  .on("click", clicked)
+//           ;
+//    }); 
+//})
 
 function clicked(d) {
   if (active.node() === this) return reset();
@@ -128,6 +143,5 @@ function reset() {
   active.classed("active", false);
   active = d3.select(null);
 }
-
 
 </script>
