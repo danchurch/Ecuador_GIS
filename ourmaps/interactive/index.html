@@ -44,8 +44,6 @@
 <script> 
 
 var svg = d3.select("svg")
-//      .call(d3.zoom().on("zoom", function () {
-//              svg.attr("transform", d3.event.transform)}))
 ;
 
 
@@ -57,7 +55,6 @@ svg.append("rect")
   .attr("class", "background")
   .attr("width", width)
   .attr("height", height)
-  .on("click", reset)
 ;
 
 var g = svg.append("g");
@@ -80,68 +77,72 @@ d3.json("provinces.geojson", function(error, prov) {
       .attr("class", "feature province")
       .style('stroke', 'black')
       .attr('fill', '#f1f4c7')
-      .on("click", clicked)
        ;
 
 // draw towns
 
-    d3.json("towns_50000.geojson", function(error, town) {
+//    d3.json("towns_50000.geojson", function(error, town) {
+//        if (error) throw error;
+//
+//        g.selectAll('path')
+//          .data(town.features)
+//          .enter()
+//          .append('path')
+//          .attr('d', path)
+//          .attr("class", "feature town")
+//          .style('stroke', 'green')
+//          .attr('fill', '#f1f4c7')
+//           ;
+//    }); 
+
+// draw bosques protectores
+
+    d3.json("bosques_protectores.geojson", function(error, BP) {
         if (error) throw error;
 
         g.selectAll('path')
-          .data(town.features)
+          .data(BP.features)
           .enter()
           .append('path')
           .attr('d', path)
-          .attr("class", "feature town")
+          .attr("class", "feature BP")
           .style('stroke', 'green')
           .attr('fill', '#f1f4c7')
            ;
     }); 
 
-// draw bosques protectores
+// draw concessions
 
-//    d3.json("bosques_protectores.geojson", function(error, BP) {
-//        if (error) throw error;
-//
-//        g.selectAll('path')
-//          .data(BP.features)
-//          .enter()
-//          .append('path')
-//          .attr('d', path)
-//          .attr("class", "feature BP")
-//          .style('stroke', 'green')
-//          .attr('fill', '#f1f4c7')
-//           ;
-//    }); 
-//
-//// draw concessions
-//
-//    d3.json("Conc_01_2018.geojson", function(error, conc) {
-//        if (error) throw error;
-//
-//        g.selectAll('path')
-//          .data(conc.features)
-//          .enter()
-//          .append('path')
-//          .attr('d', path)
-//          .attr("class", "feature concession")
-//          .style('stroke', 'red')
-//          .attr('fill', '#f1f4c7')
-//      //  .on("click", clicked)
-//           ;
-//    }); 
-//})
+    d3.json("Conc_01_2018.geojson", function(error, conc) {
+        if (error) throw error;
 
-function clicked(d) {
-  if (active.node() === this) return reset();
-  active.classed("active", false);
-  active = d3.select(this).classed("active", true);
+        g.selectAll('path')
+          .data(conc.features)
+          .enter()
+          .append('path')
+          .attr('d', path)
+          .attr("class", "feature concession")
+          .style('stroke', 'red')
+          .attr('fill', '#f1f4c7')
+      //  .on("click", clicked)
+           ;
+    }); 
+})
+
+
+//create zoom handler
+var zoom_handler = d3.zoom()
+    .on("zoom", zoom_actions);
+
+//specify what to do when zoom event listener is triggered
+function zoom_actions(){
+ g.attr("transform", d3.event.transform);
 }
 
-function reset() {
-  active.classed("active", false);
-  active = d3.select(null);
-}
+//add zoom behaviour to the svg element
+svg.call(zoom_handler)
+//.on("wheel.zoom", null)
+;
+
 
 </script>
