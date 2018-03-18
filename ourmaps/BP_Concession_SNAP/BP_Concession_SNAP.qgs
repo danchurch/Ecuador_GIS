@@ -89,7 +89,7 @@
       </filegroup>
     </legendlayer>
   </legend>
-  <Composer title="BP_Concession_overlap" visible="1">
+  <Composer title="BP_Concession_overlap" visible="0">
     <Composition gridVisible="0" printResolution="300" paperWidth="206.095" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="5" numPages="1" paperHeight="176.48" smartGuides="1" printAsRaster="0" generateWorldFile="0">
       <symbol alpha="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
