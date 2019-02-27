@@ -1,0 +1,281 @@
+lsusb
+
+## Bus 002 Device 020: ID 091e:0003 Garmin International GPS (various models)
+
+dmesg 
+
+## New USB device found, idVendor=091e, idProduct=0003
+
+lsmod | grep gps
+
+
+## no gps module found, which I gather is good. 
+
+sudo vim /etc/modprobe.d/blacklist.conf 
+
+## check permissions of the gps/usb
+
+ls -al /dev/bus/usb/001/* 
+
+## permissions are for root and plugdev. 
+
+## I think I set that group earlier. Details in the docs in the GPS manual folder
+
+## generally, use usermod:
+## usermod -a -G examplegroup exampleusername
+
+groups
+
+## yup, I am a member of plugdev. 
+
+sudo leafpad /etc/udev/rules.d/51-garmin.rules 
+
+cd /etc/udev/rules.d
+
+## we need the idVendor and idProduct to fill out our rules...
+## where to we get this?
+
+lsusb
+
+##  ID field from lsusb is the  idVender:idProduct, I think:
+
+lsusb -d 091e:0003
+
+## garmin idVendor = "091e"
+## idProduct = "0003"
+
+## create a rules file to handle garmin gpses when plugged 
+
+sudo vim 51-garmin.rules
+
+SUBSYSTEM=="usb", ATTR{idVendor}=="091e", ATTRS{idProduct}=="0003" MODE="0666", GROUP="plugdev"
+
+## unplug, replug, see if it worked:
+
+ls -Ral /dev/bus/usb/
+
+## looks like it's in 002:
+
+ls -al /dev/bus/usb/002/*
+
+## /dev/bus/usb/002/022
+## group is still plugdev
+
+## didn't do this, but may want to in the future, if the computer
+## starts turning off our GPS without asking:
+
+## create the following file? haven't tested any of this. 
+sudo vim /etc/default/tlp
+
+## add the following to this file:
+USB_BLACKLIST="091e:0003"
+
+## installed gpsbabel. to check to see if a gps is reading:
+
+gpsbabel -i garmin -f usb:-1
+
+## to start the gui:
+
+gpsbabelfe
+
+
+## some qgis notes
+
+## making 
+## convert elevations to strings? needed the following
+## on the new string column in the attribute table 
+
+replace(( to_string( ( round( "yourfield", 2)))), '.', ',')
+
+## then used the following on the filter:
+
+"elev_str" LIKE '%00'
+
+
+## getting website with wget:
+
+wget \
+     --recursive \
+     --html-extension \
+     --convert-links \
+     --no-parent \
+         https://josm.openstreetmap.de/wiki/Introduction
+
+## try exporting our raw contours to osm using josm
+
+## them try using mkgmap to make an image file
+
+## what is the first step?
+
+## save our contours to osm format using josm
+
+## done, now? mkgmap:
+
+mkgmap contour.osm
+
+## that did something. Now how do we look at it?
+
+## we need to use the usb mass storage mode... 
+## 1 - find the gps 
+
+lsusb ## Bus 002 Device 013
+
+## this means, for my computer:
+
+cd /dev/bus/usb/002
+
+## but this isn't how we find this device.
+
+## I think we have to mount the GPS...
+
+sudo mount 013 ~/foo
+## doesn't work:
+## mount: /home/daniel/foo: /dev/bus/usb/002/013 is not a block device.
+
+## diff of with gps in vs gps out, in usb bulk storage mode:
+99,100d98
+< sdb
+< sdb1
+103d100
+< sg2
+
+## not sure if any of these are important...
+
+## try mounting one:
+
+sudo mount sdb1 ~/foo
+sudo mount sdb ~/foo_sdb
+## says already mounted. 
+## Where? 
+
+## is this our GPS? Not sure. 
+
+## try putting a map on there:
+
+ls -lr > 
+/home/daniel/Documents/LosCed/Ecuador_GIS/losced/ASTGTM2_N00W079/losced_contours/63240001.img \
+/home/daniel/foo/Garmin
+
+
+## okay, can't find that on the gps. 
+## but the file dissappeared :
+## some lit is saying that we need to upload
+## a "gmapsupp.img" file, also. 
+
+## try this with mkgmap:
+
+cd /home/daniel/Documents/LosCed/Ecuador_GIS/losced/ASTGTM2_N00W079/losced_contours
+
+mkgmap contour.osm --gmapsupp
+
+
+cp \
+/home/daniel/Documents/LosCed/Ecuador_GIS/losced/ASTGTM2_N00W079/losced_contours/gmapsupp.img \
+/home/daniel/foo/Garmin
+
+sudo umount sdb1 
+
+## works, sort of. Outline of the map appears where it needs to be. 
+
+## is this because of how we drew our map on JOSM?
+
+## not sure. 
+
+## tonight - try to get points (and tracks??) onto the computer
+
+## so switch gears, play around with GPSbabel
+
+############ add waypoints to GPS ##########################
+
+## can we add the lodge as a waypoint from our maps?
+
+gpsbabel -i garmin -f usb:-1
+
+## works
+
+## start gui:
+
+gpsbabelfe &
+
+## I have some points on the gps I would like to put on a 
+## map on the computer... how to do this?
+
+mkdir ~/Desktop/foo
+
+findmnt
+
+## okay, waypoints and tracks are apparently not held in the bulk usb 
+## memory. Where are they?
+
+
+
+
+## start over. get list of devices before gps is plugged in:
+
+cd /dev 
+
+ls > ~/noGps.txt
+
+## with gps in, not in bulk usb mode:
+
+gpsbabel -i garmin -f usb:-3
+
+ls > ~/withGps.txt
+
+## and in bulk GPS mode:
+
+ls > ~/withUSB.txt
+
+
+## so what is the difference between GPS and no GPS?
+
+diff ~/noGps.txt ~/withGps.txt
+
+## no difference
+
+diff ~/noGps.txt ~/withUSB.txt
+
+## as above:
+97a98,99
+> sdc
+> sdc1
+99a102
+> sg2
+
+
+sudo mount sdb ~/foo
+
+## this is already mounted. Where?
+
+find / -name "Garmin"
+
+## /media/daniel/3730-6465/Garmin
+
+cd /media/daniel/3730-6465/Garmin
+
+## is this where we want to be?
+## nope, this is the stuff we previously
+## put on, map image files etc. 
+
+
+sudo mount sdc1 ~/foo
+
+## these are the same, sdc and sdc1
+
+sudo umount sdc1 ~/foo
+
+## what about sg2?
+
+sudo mount sdc1 ~/foo
+
+sudo umount sdc1 
+
+sudo mount sg2  ~/foo
+
+## not a memory device. Fuck, where are our waypoints?
+
+gpsbabel -i garmin -f usb:-1 
+
+gpsbabel -i garmin -f usb: -o gpx -F blah.gpx
+
+
