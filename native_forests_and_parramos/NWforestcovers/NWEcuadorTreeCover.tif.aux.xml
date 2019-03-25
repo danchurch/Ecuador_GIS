@@ -1,0 +1,21 @@
+<PAMDataset>
+  <PAMRasterBand band="1">
+    <Description>treecover2000</Description>
+    <Histograms>
+      <HistItem>
+        <HistMin>-0.495049504950495</HistMin>
+        <HistMax>100.4950495049505</HistMax>
+        <BucketCount>101</BucketCount>
+        <IncludeOutOfRange>0</IncludeOutOfRange>
+        <Approximate>1</Approximate>
+        <HistCounts>240137|924|731|594|2491|4983|1517|829|89|321|340|908|1648|843|649|911|1228|531|485|270|625|501|411|160|445|423|255|308|924|282|561|362|263|446|847|342|492|492|273|899|177|1053|557|786|1642|4633|543|1507|1551|2759|725|2683|1137|485|904|1706|406|571|3668|1743|4560|725|2731|2087|676|556|887|532|1446|691|987|1610|3460|1009|3284|1632|3758|1769|1709|2327|1222|3148|3360|1323|725|1705|4315|1589|4075|16709|98391|7529|4214|7791|11817|79607|7104|65361|32177|185342|108844</HistCounts>
+      </HistItem>
+    </Histograms>
+    <Metadata>
+      <MDI key="STATISTICS_MAXIMUM">100</MDI>
+      <MDI key="STATISTICS_MEAN">67.72904273957</MDI>
+      <MDI key="STATISTICS_MINIMUM">0</MDI>
+      <MDI key="STATISTICS_STDDEV">41.932544651059</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>
