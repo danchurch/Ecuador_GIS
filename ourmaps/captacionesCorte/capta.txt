@@ -183,7 +183,7 @@ grid.accumulation(data='dir', dirmap=dirmap, out_name='acc', apply_mask=False)
 
 ## we have our pour-point coordinates from JC:
 X,Y = 737877,10032517
-snapX, snapY = grid.snap_to_mask(grid.acc > 200, np.array([X,Y]), return_dist=False)
+snapX, snapY = grid.snap_to_mask(grid.acc > 800, np.array([X,Y]), return_dist=False)
 grid.clip_to('dem')
 grid.catchment(data='dir', x=snapX, y=snapY, out_name='RLCcatch',
                    recursionlimit=15000, xytype='label')
@@ -198,6 +198,10 @@ lsh = list(shapes)
 aa = shapely.geometry.polygon.Polygon(lsh[0][0]['coordinates'][0])
 p = gpd.GeoSeries(aa)
 p = p.set_crs('EPSG:32717')
+
+p.plot(ax=ax)
+
+ax.scatter(X,Y, color='orange')
 
 ## get catchement for Santa Rosa
 ## get coordinates for other towns
