@@ -1,0 +1,1 @@
+http://ide.ambiente.gob.ec/geoserver/mae_ide/ows?service=WFS&version=1.0.0&format_options=CHARSET:UTF-8&request=GetFeature&typeName=mae_ide:unidad_hidrica_N6_50k_2020&outputFormat=SHAPE-ZIP

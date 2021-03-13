@@ -1,0 +1,203 @@
+## okay, what do we want? 
+
+## a map with the following communities:
+
+nombre,E,N,source
+"Santa Rosa de Manduriaco",737877,10032517,"Jose Cueva"
+"Cielo Verde",733495, 10024720,"OSM"
+"Rio Verde",,,
+"Pueblo Unido",,,
+"El Corazón",,,
+"El Paraíso",746767, 10019038,"poblado_1000000" 
+"San José de Magdalena",
+"Magdalena Alto",749720,10030615,"OSM",
+"Brillasol",748903,10040681,"Valenica 2019"
+"Magdalena bajo",746694,10026728,"OSM"
+
+
+## which of these are on the old data?:
+
+## No fucking around, we need a geopanda.
+
+import os
+import pandas as pd
+import matplotlib.pyplot as plt; plt.ion()
+import numpy as np
+import scipy.spatial as sp
+import geopandas as gpd
+import rasterio
+import rasterio.plot
+import copy
+import random
+import shapely
+from pysheds.grid import Grid
+
+losCedPoly = gpd.read_file('/home/daniel/Documents/LosCed/Ecuador_GIS/'
+                                'losced/loscedpoly/loscedpoly.shp')
+riversStreams = gpd.read_file('/home/daniel/Documents/LosCed/'
+                                'Ecuador_GIS/losced/Rivers/MergedRiversAndStreams.shp')
+cuencas = gpd.read_file('/home/daniel/Documents/LosCed/Ecuador_GIS/ourmaps/'
+                        'captacionesCorte/LCcatchements.geojson')
+onlybigTown = gpd.read_file('/home/daniel/Documents/LosCed/Ecuador_GIS/'
+                                'centros_poblados/poblado_p_50000/poblado_p.shp')
+medBigTown = gpd.read_file('/home/daniel/Documents/LosCed/Ecuador_GIS/'
+                                'centros_poblados/poblado_p_250000/poblado_p.shp')
+allTown = (gpd.read_file('/home/daniel/Documents/LosCed/Ecuador_GIS/'
+                                'centros_poblados/poblado_1000000/poblados.shp')
+                                .to_crs("EPSG:32717"))
+smallAstpath = "/home/daniel/Documents/analyses/losCedrosTrees/anaData/GIS/smallAster.tif"
+smallAstRast = rasterio.open(smallAstpath)
+
+
+
+plt.close('all')
+fig, ax = plt.subplots()
+riversStreams.plot(ax=ax, color='blue')
+cuencas.plot(ax=ax, color='blue', alpha=0.3)
+cuencas.boundary.plot(ax=ax, color='black')
+losCedPoly.boundary.plot(ax=ax, color='red')
+
+
+## cielo verde or Rio Verde:
+allTown[allTown.nombre.str.contains('CIELO')] ## one hit, "el cielo"
+allTown[allTown.nombre.str.contains('CIELO')].plot(ax=ax,) ## far away
+allTown[allTown.nombre.str.contains('VERD')].plot(ax=ax)
+allTown[allTown.nombre.str.contains('VERD')] 
+allTown[allTown.nombre.str.contains('VERD')] 
+onlybigTown[onlybigTown.nam.str.contains('VERD')]
+medBigTown[medBigTown.nam.str.contains('VERD')] ## one hit
+medBigTown[medBigTown.nam.str.contains('VERD')].plot(ax=ax) ## far away
+medBigTown[medBigTown.nam.str.contains('CIELO')]
+## no help
+
+## but its on OSM, lat/long: 0.2235, -78.9021
+
+ptCieloVerde = gpd.GeoSeries(shapely.geometry.Point(-78.9021,0.2235))
+ptCieloVerde.set_crs('EPSG:4326', inplace=True)
+ptCieloVerde = ptCieloVerde.to_crs("EPSG:32717")
+ptCieloVerde.plot(ax=ax)
+
+ptCieloVerde
+
+## Pueblo Unido
+allTown[allTown.nombre.str.contains('UNID')] ## one hit
+allTown[allTown.nombre.str.contains('UNID')].plot(ax=ax) ## far away
+onlybigTown[onlybigTown.nam.str.contains('UNID')]
+medBigTown[medBigTown.nam.str.contains('UNID')] 
+## nada
+## and no help on open street map, or google
+
+## Corazon
+allTown[allTown.nombre.str.contains('CORAZ')] ## four hits
+allTown[allTown.nombre.str.contains('CORAZ')].plot(ax=ax) ## all far away
+onlybigTown[onlybigTown.nam.str.contains('CORAZ')]
+medBigTown[medBigTown.nam.str.contains('CORAZ')] ## one hit, name matches
+medBigTown[medBigTown.nam.str.contains('CORAZ')].plot(ax=ax) ## really far south..
+## think this is nada
+
+## Paraiso
+allTown[allTown.nombre.str.contains('PARA')]
+## there's one in there, looks like it is across the guayllbamba?:
+allTown[allTown.nombre.str.contains('PARA')].plot(ax=ax)
+## but that must be it...
+X,Y = plt.ginput(1)[0]
+## recorded above
+
+## San José de Magdalena
+allTown[allTown.nombre.str.contains('MAGDAL')] ## two hits
+allTown[allTown.nombre.str.contains('MAGDAL')].plot(ax=ax) ## nope, far away
+onlybigTown[onlybigTown.nam.str.contains('MAGDAL')]
+medBigTown[medBigTown.nam.str.contains('MAGDAL')] ## one hit
+medBigTown[medBigTown.nam.str.contains('MAGDAL')].plot(ax=ax) ## far away
+onlybigTown[onlybigTown.nam.str.contains('MAGDAL')] 
+
+
+allTown[allTown.nombre.str.contains('SAN JOSE')] ## lots
+allTown[allTown.nombre.str.contains('SAN JOSE')].plot(ax=ax) ## a couple close-ish, but don't think they're it
+medBigTown[medBigTown.nam.str.contains('SAN JOSE')] ## nada? surprise
+onlybigTown[onlybigTown.nam.str.contains('SAN JOSE')] ## same, nada
+medBigTown[medBigTown.nam.str.contains('MAGDAL')]
+
+## there is a 0.5 chance that this is magdalena bajo with a fancy name. 
+
+## if so, magdalena bajo has the following lat/long from OSM:
+## 0.2416327, -78.7835647
+
+ 0.2416327, -78.7835647
+
+ptMB = gpd.GeoSeries(shapely.geometry.Point(-78.7835647, 0.2416327))
+ptMB.set_crs('EPSG:4326', inplace=True)
+ptMB = ptMB.to_crs("EPSG:32717")
+
+ptMB.plot(ax=ax, color='green')
+
+"Magdalena Alto", 
+## don't think this one is to be found the above files,
+## so we go to OSM, they have have it, but in lat/long:
+
+pt = gpd.GeoSeries(shapely.geometry.Point(-78.7563785,0.2767661))
+pt.set_crs('EPSG:4326', inplace=True)
+pt = pt.to_crs("EPSG:32717")
+
+pt.plot(ax=ax, color='green')
+
+help(shapely.geometry.Point)
+ 
+
+"Brillasol"
+allTown[allTown.nombre.str.contains('BRILL')] 
+medBigTown[medBigTown.nam.str.contains('BRILL')] 
+onlybigTown[onlybigTown.nam.str.contains('BRILL')] 
+## nope
+## nothing on OSM
+## there is this: https://core.ac.uk/download/pdf/287052475.pdf ; p19 (38)
+## they misreport their crs a bit, but think this is it?:
+## 748903 10040681
+
+#### get catchments 
+
+## we want just the watersheds that touch los cedros:
+
+touchLC = cuencas.intersects(losCedPoly.geometry[0])
+cuencas[touchLC].plot(ax=ax)
+
+cuencas[touchLC].to_file('LCcatchements.geojson', driver='GeoJSON')
+
+
+### get catchment of the Santa Rosa / Cielo verde water source
+
+## we can follow our notes from the Ana paper
+
+smallAstRast
+
+## import our dem as a grid object for pysheds
+smallAstpath = "/home/daniel/Documents/analyses/losCedrosTrees/anaData/GIS/smallAster.tif"
+grid = Grid.from_raster(smallAstpath, data_name='dem')
+## clean it up as per recommendations by pyshed.
+grid.fill_depressions(data='dem', out_name='flooded_dem')
+grid.resolve_flats(data='flooded_dem', out_name='inflated_dem')
+dirmap = (64,  128,  1,   2,    4,   8,    16,  32)
+## make our flowdir and accumulation 
+grid.flowdir(data='inflated_dem', out_name='dir', dirmap=dirmap)
+grid.accumulation(data='dir', dirmap=dirmap, out_name='acc', apply_mask=False)
+
+## we have our pour-point coordinates from JC:
+X,Y = 737877,10032517
+snapX, snapY = grid.snap_to_mask(grid.acc > 200, np.array([X,Y]), return_dist=False)
+grid.clip_to('dem')
+grid.catchment(data='dir', x=snapX, y=snapY, out_name='RLCcatch',
+                   recursionlimit=15000, xytype='label')
+grid.clip_to('RLCcatch')
+fig, ax = plt.subplots(figsize=(8,8))
+plt.imshow(grid.view('dem'), extent=grid.RLCcatch.extent)
+## make sure we are clipped to the watershed we want:
+grid.clip_to('RLCcatch')
+## then vectorize:
+shapes = grid.polygonize()
+lsh = list(shapes)
+aa = shapely.geometry.polygon.Polygon(lsh[0][0]['coordinates'][0])
+p = gpd.GeoSeries(aa)
+p = p.set_crs('EPSG:32717')
+
+## get catchement for Santa Rosa
+## get coordinates for other towns
