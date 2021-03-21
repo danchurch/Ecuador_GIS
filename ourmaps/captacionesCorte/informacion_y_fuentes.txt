@@ -1,0 +1,18 @@
+Fuentes:
+1 - Mapa de Los Cedros 1994, Tile: CT-N11-C3-d. Instituto Geografico Militar.
+
+2 - Ríos (torrente), Instituto Geografico Militar. Disponible en: sni.gob.ec/coberturas. Consultado Agosto 2017.
+
+3 - Advanced Spaceborne Thermal Emission and Reflection Radiometer (ASTER) Global Digital Elevation Model (GDEM) Version 2, 2011. Tile: N00W079. NASA. Disponible en: earthdata.nasa.gov
+
+4 - Mapa 09, Hidrológico del ACUSMIT. Plan de Manejo del Area de Conservacion y Uso Sustentable Municipal Intag-Toisán, Cantón Santa Ana de Cotacachi - Prov. de Imbabura
+
+5 - Actualización Plan Parroquial de Desarrollo y Elaboración Plan de Ordenamiento Territorial de García Moreno, 2011.
+
+6 - Unidades Hidrográficas Nivel 6 (2020). Ministerio de Ambiente y Agua. Disponible en: http://ide.ambiente.gob.ec/mapainteractivo/. Consultado Marzo 2021
+
+Datum: WGS 84, Zona 17S.
+Proyección: UTM
+Escala: 1:150000
+Fecha: March 2021
+Elaborado por: Thomas, D. www.amanitaassociates.org. (+Jose Cueva, +Jose DeCoux, +Mirea Levy?? como quieran)

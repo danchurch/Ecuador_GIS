@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"name": "communidades_LosCedros",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32717" } },
+"features": [
+{ "type": "Feature", "properties": { "id": null, "Nombre": "Brilla Sol" }, "geometry": { "type": "Point", "coordinates": [ 750609.228469561319798, 10037940.367999520152807 ] } },
+{ "type": "Feature", "properties": { "id": null, "Nombre": "Pueblo Unido" }, "geometry": { "type": "Point", "coordinates": [ 738384.719405642477795, 10028814.457902817055583 ] } },
+{ "type": "Feature", "properties": { "id": null, "Nombre": "Santa Rosa de Manduriaco" }, "geometry": { "type": "Point", "coordinates": [ 735526.19157021632418, 10029888.939996983855963 ] } },
+{ "type": "Feature", "properties": { "id": null, "Nombre": "Chontal" }, "geometry": { "type": "Point", "coordinates": [ 750464.574300000444055, 10026238.1388 ] } },
+{ "type": "Feature", "properties": { "id": null, "Nombre": "Cielo Verde" }, "geometry": { "type": "Point", "coordinates": [ 733590.959245110978372, 10024701.470873424783349 ] } },
+{ "type": "Feature", "properties": { "id": null, "Nombre": "Magdalena alto" }, "geometry": { "type": "Point", "coordinates": [ 749744.700206621317193, 10030792.152079848572612 ] } },
+{ "type": "Feature", "properties": { "id": null, "Nombre": "Rio Verde" }, "geometry": { "type": "Point", "coordinates": [ 740186.675184216932394, 10026592.425369624048471 ] } },
+{ "type": "Feature", "properties": { "id": null, "Nombre": "El Corazón" }, "geometry": { "type": "Point", "coordinates": [ 743340.923092238139361, 10027406.299553601071239 ] } },
+{ "type": "Feature", "properties": { "id": null, "Nombre": "Paraíso" }, "geometry": { "type": "Point", "coordinates": [ 745556.506274703657255, 10027972.426486661657691 ] } },
+{ "type": "Feature", "properties": { "id": null, "Nombre": "Magdalena Bajo" }, "geometry": { "type": "Point", "coordinates": [ 746892.871587391360663, 10026753.783070243895054 ] } }
+]
+}
