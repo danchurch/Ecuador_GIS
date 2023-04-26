@@ -1,0 +1,140 @@
+## okay, Roo and Bitty want a map of lc:
+
+"""
+a nice map, showing where the two plots are and the location of Los Cedros within Ecuador (and maybe shine there extent of deforestation on the west side). 
+ 
+I think a map showing the location of Los Cedros within the country, and then an inset showing the region around LC, the boundaries of the Reserve, marking the two permanent plots, and showing the concessions (which I can't believe are still up on the ARCOM site, still marked "INSCRITA"!) would do it. If you can pull the forest cover data, that would be great for the whole country map, I think... but, I realize we're on a tight submission deadline right now, so we could plan on updating the figure in the revisions, and just put in a simpler (and faster to create) map, without that info, for the moment. 
+
+Files should be vector art in PDF format, either 85mm or 170mm wide (for one column, or full width), and no taller than ~200mm (the printable area of the sheet is 170x225mm). We used Arial Bold for the letters in the photo plates, and the frame lines are 4px wide (not really sure how that translates in the vector graphics, since the photos are bitmaps) — I think those are all the specs you might need, graphically. Let me know if I missed something! 
+
+actually think that the only points we need (Bitty: thoughts?) are the proper Oso point (representing the ridgetop permanent plot), the Brazilargo point (representing the Ana Mariscal plot), the Miner point (representing the RTG collecting locality), and the Reserve HQ point
+"""
+
+## this is essentially two maps. 
+
+## 1 - map of ecuador, potentially with forest cover. And/or with forest cover 
+
+## 2 - map of los Cedros and immediate surroundings with concession and sample sites/plots 
+
+## then let's put them together with inkscape
+
+## second one is probably easier, start with that.
+
+python3
+
+import matplotlib.pyplot as plt; plt.ion()
+import pandas as pd
+import geopandas as gpd
+
+## first, get the los cedros boundary
+
+lcpoly = gpd.read_file("/home/daniel/Documents/losCedros/Ecuador_GIS/losced/loscedpoly/loscedpoly.shp")
+
+lcpoly.plot() ## looks good. if we just want the outline?:
+
+lcpoly.boundary.plot() 
+
+## the concessions... hmmm...
+concFile="/home/daniel/Documents/losCedros/Ecuador_GIS/concesiones/concessions_07_08_2017/CMN_07_08_2017/CMN_07_08_2017 PSAD56.shp"
+concs = gpd.read_file(concFile)
+
+## I thought that PSAD56 was the same as using UTM zone 17s, but
+## getting warnings, so...
+
+lcpoly.crs
+
+concs.crs
+
+concs.to_crs(epsg="32717", inplace=True)
+
+## subset to the concessions that touch LC
+lcConcs = concs[concs.intersects(lcpoly.iloc[0]['geometry'])]
+
+
+## Bitty's site data, reduced to the sites Roo requested, are here:
+bittyPoints = pd.read_excel("/home/daniel/Documents/losCedros/mapRequests/rooFungalPaper/RLC_GPSlocations_reduced.xlsx")
+## to make a spatial df out of this...
+bittyDF = bittyPoints[['Trail']]
+pts = gpd.points_from_xy(bittyPoints['Longitude(Dd)'], bittyPoints['Latitude(Dd)'])
+bittyGPD = gpd.GeoDataFrame(bittyDF, geometry=pts)
+bittyGPD.set_crs("EPSG:4326", inplace=True)
+bittyGPD.to_crs(epsg="32717", inplace=True)
+
+## let's pick out just the points that Roo wants to include: 
+Oso
+Brazilargo
+Miner
+Reserve HQ
+
+
+
+pts = gpd.points_from_xy(bittyPoints['Longitude(Dd)'], bittyPoints['Latitude(Dd)'])
+
+X1,Y1 = plt.ginput(1)[0]
+
+X2,Y2 = plt.ginput(1)[0]
+
+bittyGPD.to_file('bittyGPD.geojson', driver='GeoJSON')
+
+## we probably want some of the nearby communities included?
+comms = gpd.read_file("/home/daniel/Documents/losCedros/Ecuador_GIS/losced/communities/communidades_LosCedros.geojson")
+## we'll probably want to subset this, if we are going to use it.
+
+comms.crs
+
+comms.plot(ax=ax, color='r')
+
+## trails?
+paths = gpd.read_file("/home/daniel/Documents/losCedros/Ecuador_GIS/losced/losCed_trail_map/tracePaths.shp")
+paths.to_crs(epsg="32717", inplace=True)
+
+## 
+
+## what is our base layer? google earth? topography?
+## two important websites 
+https://sni.gob.ec/coberturas
+http://ide.ambiente.gob.ec/mapainteractivo/
+
+## is the mariscal plot represented here?
+
+plt.close('all')
+fig, ax = plt.subplots()
+lcConcs.plot(ax=ax)
+lcpoly.boundary.plot(color='k', ax=ax)
+bittyGPD.plot(ax=ax, color='lime')
+paths.plot(ax=ax, color='slategrey')
+plt.savefig('loscedInsert.svg')
+
+##  the x/y axes can be made into scale bars in inkscape
+
+## this is probably the raw feature set that we need 
+## to play with inkscape/qgis
+
+
+#### ecuador map? ###
+
+## they want a full map of ecuador:
+
+ecOutline = gpd.read_file('/home/daniel/Documents/losCedros/Ecuador_GIS/limites_administrativas/Ecuador_outline.shp')
+
+
+## great, we want to point for los cedros for reference.
+## reuse the last request from jc:
+lcOutlinePoint = gpd.read_file('/home/daniel/Documents/losCedros/mapRequests/jc21.10.22/lcBoundaryAndStation.GeoJSON')
+## don't want the chontal point on there:
+lcOutlinePoint.set_index('Name', inplace=True)
+lcOutlinePoint.drop('Chontal', axis=0, inplace=True)
+
+lcOutlinePoint
+
+plt.close('all')
+fig, ax = plt.subplots()
+ecOutline.boundary.plot(ax=ax)
+lcOutlinePoint.plot(ax=ax)
+plt.savefig('ecuadorLargeScale.svg')
+
+## from these two we can make a simple map. 
+## to me this needs some other info, but start with 
+## this so, get the dialogue rolling.
+
+

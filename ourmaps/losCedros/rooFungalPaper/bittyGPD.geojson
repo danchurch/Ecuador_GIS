@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32717" } },
+"features": [
+{ "type": "Feature", "properties": { "Trail": "access trail" }, "geometry": { "type": "Point", "coordinates": [ 748440.41572859371081, 10033144.433603690937161 ] } },
+{ "type": "Feature", "properties": { "Trail": "Brazilargo" }, "geometry": { "type": "Point", "coordinates": [ 746718.336753893294372, 10033341.307490389794111 ] } },
+{ "type": "Feature", "properties": { "Trail": "Cascada Nueva" }, "geometry": { "type": "Point", "coordinates": [ 746955.426935918512754, 10035922.634040957316756 ] } },
+{ "type": "Feature", "properties": { "Trail": "Cuchillo" }, "geometry": { "type": "Point", "coordinates": [ 744153.802175965625793, 10033318.665643706917763 ] } },
+{ "type": "Feature", "properties": { "Trail": "Inca" }, "geometry": { "type": "Point", "coordinates": [ 747332.747413335368037, 10034699.549281803891063 ] } },
+{ "type": "Feature", "properties": { "Trail": "miner" }, "geometry": { "type": "Point", "coordinates": [ 744024.320368372253142, 10035347.223100773990154 ] } },
+{ "type": "Feature", "properties": { "Trail": "Observatorio" }, "geometry": { "type": "Point", "coordinates": [ 746752.021199739305303, 10031951.014178683981299 ] } },
+{ "type": "Feature", "properties": { "Trail": "Oso" }, "geometry": { "type": "Point", "coordinates": [ 747134.145146045135334, 10034942.525382062420249 ] } },
+{ "type": "Feature", "properties": { "Trail": "Oso" }, "geometry": { "type": "Point", "coordinates": [ 745944.399711044738069, 10035088.85831362195313 ] } },
+{ "type": "Feature", "properties": { "Trail": "Reserve HQ" }, "geometry": { "type": "Point", "coordinates": [ 747163.927881338284351, 10034178.080399628728628 ] } },
+{ "type": "Feature", "properties": { "Trail": "Rio" }, "geometry": { "type": "Point", "coordinates": [ 746191.888258867664263, 10034720.213325129821897 ] } }
+]
+}
